@@ -1,0 +1,31 @@
+img {
+  position: absolute;
+  top: 25px;
+  margin-left: 20px;
+  z-index: 1; /* Breng naar voren */
+}
+svg {
+  position: relative;
+  top: 20px;
+  z-index: 0; /* Breng naar de achtergrond */
+}
+body {
+  font-family: 'Raleway';
+  padding-bottom: 50px;
+}
+li {
+  margin: 20px 50px 0 0;
+}
+table {
+  width: 1400px;
+  margin: 0 50px 0 50px;
+  position: absolute;
+  top: 980px;
+  z-index: 1; /* Breng naar voren */
+}
+td {
+  width: 50%;
+  vertical-align: top;
+  padding-right: 60px;
+  position: relative;
+}
