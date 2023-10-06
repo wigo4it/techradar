@@ -41,8 +41,6 @@ Kleuren:
 
 <title>Wigo4it Tech Radar</title>
 
-<img src="wigo4it.png" alt="Wigo4it logo">
-
 <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
@@ -70,34 +68,16 @@ Kleuren:
 
 <body>
 
-<svg id="radar"></svg>
+<div class="center-box">
+  <img src="wigo4it-logo.svg" alt="Wigo4it logo">
+  <h1>Tech Radar</h1>
+</div>
+
+<svg id="radar" style="display: block; margin: auto"></svg>
 
 <script>
 radar_visualization({
-  svg_id: "radar",
-  width: 1450,
-  height: 1000,
-  colors: {
-    background: "#fff",
-    grid: '#dddde0',
-    inactive: "#ddd"
-  },
-  //title: "Wigo4it Tech Radar", //hiervoor in de plaats gebuiken we een logo
   date: "2023.07",
-  quadrants: [
-    { name: "Infrastructuur & Platformen" }, //rechtsonder
-    { name: "Talen & Frameworks" }, //linksonder
-    { name: "Architecturen & Methodes" }, //linksboven
-    { name: "Ondersteuning & Tools" }, //rechtsboven
-  ],
-  rings: [
-    { name: "Gebruik", color: "#66D08F" }, //groen
-    { name: "Probeer", color: "#00116E" }, //blauw
-    { name: "Onderzoek", color: "#E67968" }, //oranje
-    { name: "Verminder", color: "#BB4EAC" } //roze
-  ],
-  print_layout: true,
-  links_in_new_tabs: true,
   entries: [
 //linksboven Architecturen & Methodes (2)
       {
@@ -881,38 +861,36 @@ radar_visualization({
 });
 </script>
 
-<table>
-<tr>
-<td>
-  <h3>Wat is de Wigo4it Tech Radar?</h3>
-  <p>
-    De Wigo4it Tech Radar is een lijst van technieken ondersteund door een <em>ring assignment</em>. Deze bestaat uit vier ringen met de volgende karakteristieken:
-  </p>
-  <ul>
-  <li><strong>Gebruik</strong> &mdash; Deze technieken (kunnen) worden ingezet in productie.</li>
-  <li><strong>Probeer</strong> &mdash; Deze technieken <em>zijn</em> interessant en kunnen onderdeel zijn van een MVP in productie. </li>
-  <li><strong>Onderzoek</strong> &mdash; Deze technieken <em>lijken</em> interessant en kunnen onderdeel zijn van een POC in een <em>niet</em> productie omgeving.  </li>
-  <li><strong>Verminder</strong> &mdash; Inzet op deze technieken dient verminderd te worden.</li>
-  </ul>
-</td>
-<td>
-  <h3>Wat is het doel?</h3>
-  <p>
-  Deze Tech Radar is bedoeld om alignment te creeëren voor onze engineering squads.
-  </p>
-  <h3>Wie bepaalt dit?</h3>
-  <p>
-    De inhoud van Wigo4it Tech Radar wordt maandelijks vastgesteld door de enigineers in samenwerking met de Tech Lead. Staat iets verkeerd of er niet op? Geen paniek dan gaan we het daar over hebben.
-  </p>
-  <p>
-    Vorige versies kan je hier vinden: <a href="changelog.html">Changelog</a>
-  </p>
-  <p>
-    <em>Gebaseerd op: <a href="https://www.thoughtworks.com/radar">ThoughtWorks</a> & <a href="https://github.com/zalando/tech-radar"> Zalando TechRadar</a></em>
-  </p>
-</td>
-</tr>
-</table>
+<div class="center-box">
+  <div class="column">
+    <h3>Wat is de Wigo4it Tech Radar?</h3>
+    <p>
+      De Wigo4it Tech Radar is een lijst van technieken ondersteund door een <em>ring assignment</em>. Deze bestaat uit vier ringen met de volgende karakteristieken:
+    </p>
+    <ul>
+    <li><strong style="color: var(--kleur-gebruik)">Gebruik</strong> &mdash; Deze technieken (kunnen) worden ingezet in productie.</li>
+    <li><strong style="color: var(--kleur-probeer)">Probeer</strong> &mdash; Deze technieken <em>zijn</em> interessant en kunnen onderdeel zijn van een MVP in productie. </li>
+    <li><strong style="color: var(--kleur-onderzoek)">Onderzoek</strong> &mdash; Deze technieken <em>lijken</em> interessant en kunnen onderdeel zijn van een POC in een <em>niet</em> productie omgeving.  </li>
+    <li><strong style="color: var(--kleur-verminder)">Verminder</strong> &mdash; Inzet op deze technieken dient verminderd te worden.</li>
+    </ul>
+  </div>
+  <div class="column">
+    <h3>Wat is het doel?</h3>
+    <p>
+    Deze Tech Radar is bedoeld om alignment te creeëren voor onze engineering squads.
+    </p>
+    <h3>Wie bepaalt dit?</h3>
+    <p>
+      De inhoud van Wigo4it Tech Radar wordt maandelijks vastgesteld door de enigineers in samenwerking met de Tech Lead. Staat iets verkeerd of er niet op? Geen paniek dan gaan we het daar over hebben.
+    </p>
+    <p>
+      Vorige versies kan je hier vinden: <a href="changelog.html">Changelog</a>
+    </p>
+    <p>
+      <em>Gebaseerd op: <a href="https://www.thoughtworks.com/radar">ThoughtWorks</a> & <a href="https://github.com/zalando/tech-radar"> Zalando TechRadar</a></em>
+    </p>
+  </div>
+</div>
 
 </body>
 </html>

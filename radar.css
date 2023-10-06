@@ -1,31 +1,38 @@
-img {
-  position: absolute;
-  top: 25px;
-  margin-left: 20px;
-  z-index: 1; /* Breng naar voren */
-}
-svg {
-  position: relative;
-  top: 20px;
-  z-index: 0; /* Breng naar de achtergrond */
+:root {
+  --kleur-achtergrond: #212e63; /* officieel #00116E */
+  --kleur-tekst: white;
+  --kleur-accent: var(--kleur-onderzoek);
+
+  --kleur-gebruik: #66d08f;
+  --kleur-probeer: white;
+  --kleur-onderzoek: #e67968;
+  --kleur-verminder: #bb4eac;
 }
 body {
   font-family: 'Raleway';
+  padding-top: 10px;
   padding-bottom: 50px;
+  background-color: var(--kleur-achtergrond);
+  color: var(--kleur-tekst);
+}
+img {
+  width: 210px;
+}
+h1 {
+  padding: 0 15px 0 15px;
 }
 li {
   margin: 20px 50px 0 0;
 }
-table {
-  width: 1400px;
-  margin: 0 50px 0 50px;
-  position: absolute;
-  top: 980px;
-  z-index: 1; /* Breng naar voren */
+a {
+  color: var(--kleur-accent);
 }
-td {
-  width: 50%;
-  vertical-align: top;
-  padding-right: 60px;
-  position: relative;
+.center-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column {
+  width: 640px;
+  padding: 0 20px 0 20px;
 }
