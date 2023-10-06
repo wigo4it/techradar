@@ -14,6 +14,36 @@
 
 function radar_visualization(config) {
 
+  const style = getComputedStyle(document.documentElement);
+
+  config.svg_id = "radar";
+  config.width = 1450;
+  config.height = 900;
+  config.colors = {
+    background: style.getPropertyValue('--kleur-achtergrond'),
+    text: style.getPropertyValue('--kleur-tekst'),
+    grid: '#dddde0',
+    inactive: "#ddd",
+    gebruik: style.getPropertyValue('--kleur-gebruik'),
+    probeer: style.getPropertyValue('--kleur-probeer'),
+    onderzoek: style.getPropertyValue('--kleur-onderzoek'),
+    verminder: style.getPropertyValue('--kleur-verminder')
+  };
+  config.quadrants = [
+    { name: "Infrastructuur & Platformen" }, //rechtsonder
+    { name: "Talen & Frameworks" }, //linksonder
+    { name: "Architecturen & Methodes" }, //linksboven
+    { name: "Ondersteuning & Tools" }, //rechtsboven
+  ];
+  config.rings = [
+    { name: "Gebruik", color: config.colors.gebruik, textColor: "white" },
+    { name: "Probeer", color: config.colors.probeer, textColor: "black" },
+    { name: "Onderzoek", color: config.colors.onderzoek, textColor: "white" },
+    { name: "Verminder", color: config.colors.verminder, textColor: "white" }
+  ];
+  config.print_layout = true;
+  config.links_in_new_tabs = true;
+
   // custom random number generator, to make random sequence reproducible
   // source: https://stackoverflow.com/questions/521295
   var seed = 42;
@@ -142,6 +172,7 @@ function radar_visualization(config) {
     entry.y = point.y;
     entry.color = entry.active || config.print_layout ?
       config.rings[entry.ring].color : config.colors.inactive;
+    entry.textColor = config.rings[entry.ring].textColor;
   }
 
   // partition entries according to segments
@@ -173,14 +204,6 @@ function radar_visualization(config) {
     return "translate(" + x + "," + y + ")";
   }
 
-  function viewbox(quadrant) {
-    return [
-      Math.max(0, quadrants[quadrant].factor_x * 400) - 420,
-      Math.max(0, quadrants[quadrant].factor_y * 400) - 420,
-      440,
-      440
-    ].join(" ");
-  }
 
   var svg = d3.select("svg#" + config.svg_id)
     .style("background-color", config.colors.background)
@@ -188,11 +211,7 @@ function radar_visualization(config) {
     .attr("height", config.height);
 
   var radar = svg.append("g");
-  if ("zoomed_quadrant" in config) {
-    svg.attr("viewBox", viewbox(config.zoomed_quadrant));
-  } else {
-    radar.attr("transform", translate(config.width / 2, config.height / 2));
-  }
+  radar.attr("transform", translate(config.width / 2, config.height / 2));
 
   var grid = radar.append("g");
 
@@ -201,12 +220,12 @@ function radar_visualization(config) {
     .attr("x1", 0).attr("y1", -400)
     .attr("x2", 0).attr("y2", 400)
     .style("stroke", config.colors.grid)
-    .style("stroke-width", 1);
+    .style("stroke-width", 2);
   grid.append("line")
     .attr("x1", -400).attr("y1", 0)
     .attr("x2", 400).attr("y2", 0)
     .style("stroke", config.colors.grid)
-    .style("stroke-width", 1);
+    .style("stroke-width", 2);
 
   // background color. Usage `.attr("filter", "url(#solid)")`
   // SOURCE: https://stackoverflow.com/a/31013492/2609980
@@ -218,7 +237,7 @@ function radar_visualization(config) {
     .attr("height", 1)
     .attr("id", "solid");
   filter.append("feFlood")
-    .attr("flood-color", "rgb(0, 0, 0, 0.8)");
+    .attr("flood-color", config.colors.text);
   filter.append("feComposite")
     .attr("in", "SourceGraphic");
 
@@ -230,16 +249,17 @@ function radar_visualization(config) {
       .attr("r", rings[i].radius)
       .style("fill", "none")
       .style("stroke", config.colors.grid)
-      .style("stroke-width", 1);
+      .style("stroke-width", 2);
     if (config.print_layout) {
       grid.append("text")
         .text(config.rings[i].name)
-        .attr("y", -rings[i].radius + 62)
+        .attr("y", -rings[i].radius + 32)
         .attr("text-anchor", "middle")
         .style("fill", config.rings[i].color)
-        .style("opacity", 0.35) //doorzichtigheid van de tekst in de ring
+        .style("opacity", 0.75) //doorzichtigheid van de tekst in de ring
+        .style("text-transform", "uppercase")
         .style("font-family", "Raleway")
-        .style("font-size", "40px")
+        .style("font-size", "20px")
         .style("font-weight", "900")
         .style("pointer-events", "none")
         .style("user-select", "none");
@@ -261,14 +281,6 @@ function radar_visualization(config) {
   // draw title and legend (only in print layout)
   if (config.print_layout) {
 
-    // title
-    radar.append("text")
-      .attr("transform", translate(title_offset.x, title_offset.y))
-      .text(config.title)
-      .style("font-family", "Raleway")
-      .style("font-size", "30")
-      .style("font-weight", "900")
-
     // date
     radar
       .append("text")
@@ -276,15 +288,16 @@ function radar_visualization(config) {
       .text(config.date || "")
       .style("font-family", "Raleway")
       .style("font-size", "14")
-      .style("fill", "#999")
+      .style("fill", config.colors.text)
 
     // footer
     radar.append("text")
       .attr("transform", translate(footer_offset.x, footer_offset.y))
-      .text("◾ nieuw ▲ verplaatst")
+      .text("■ nieuw ▲ verplaatst")
       .attr("xml:space", "preserve")
       .style("font-family", "Raleway")
-      .style("font-size", "10px");
+      .style("font-size", "10px")
+      .style("fill", config.colors.text);
 
     // legend
     var legend = radar.append("g");
@@ -297,7 +310,8 @@ function radar_visualization(config) {
         .text(config.quadrants[quadrant].name)
         .style("font-family", "Raleway")
         .style("font-size", "20px")
-        .style("font-weight", "900");
+        .style("font-weight", "900")
+        .style("fill", config.colors.text);
       for (var ring = 0; ring < 4; ring++) {
         legend.append("text")
           .attr("transform", legend_transform(quadrant, ring))
@@ -324,6 +338,7 @@ function radar_visualization(config) {
               .text(function(d, i) { return d.id + ". " + d.label; })
               .style("font-family", "Raleway")
               .style("font-size", "11px")
+              .attr("fill", config.colors.text)
               .on("mouseover", function(d) { showBubble(d); highlightLegendItem(d); })
               .on("mouseout", function(d) { hideBubble(d); unhighlightLegendItem(d); });
       }
@@ -345,14 +360,14 @@ function radar_visualization(config) {
   bubble.append("rect")
     .attr("rx", 4)
     .attr("ry", 4)
-    .style("fill", "#333");
+    .style("fill", config.colors.text);
   bubble.append("text")
     .style("font-family", "Raleway")
     .style("font-size", "10px")
-    .style("fill", "#fff");
+    .style("fill", config.colors.background);
   bubble.append("path")
     .attr("d", "M 0,0 10,0 5,8 z")
-    .style("fill", "#333");
+    .style("fill", config.colors.text);
 
   function showBubble(d) {
     if (d.active || config.print_layout) {
@@ -361,7 +376,7 @@ function radar_visualization(config) {
       var bbox = tooltip.node().getBBox();
       d3.select("#bubble")
         .attr("transform", translate(d.x - bbox.width / 2, d.y - 16))
-        .style("opacity", 0.8);
+        .style("opacity", 1);
       d3.select("#bubble rect")
         .attr("x", -5)
         .attr("y", -bbox.height)
@@ -381,13 +396,13 @@ function radar_visualization(config) {
   function highlightLegendItem(d) {
     var legendItem = document.getElementById("legendItem" + d.id);
     legendItem.setAttribute("filter", "url(#solid)");
-    legendItem.setAttribute("fill", "white");
+    legendItem.setAttribute("fill", config.colors.background);
   }
 
   function unhighlightLegendItem(d) {
     var legendItem = document.getElementById("legendItem" + d.id);
     legendItem.removeAttribute("filter");
-    legendItem.removeAttribute("fill");
+    legendItem.setAttribute("fill", config.colors.text);
   }
 
   // draw blips on radar
@@ -438,7 +453,7 @@ function radar_visualization(config) {
         .text(blip_text)
         .attr("y", 3)
         .attr("text-anchor", "middle")
-        .style("fill", "#fff")
+        .style("fill", d.textColor)
         .style("font-family", "Raleway")
         .style("font-size", function(d) { return blip_text.length > 2 ? "8px" : "9px"; })
         .style("pointer-events", "none")
