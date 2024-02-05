@@ -1,0 +1,788 @@
+{
+  "version": "2023.07",
+  "entries": [
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "DevOps",
+      "link": "https://en.wikipedia.org/wiki/DevOps",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Extreme Programming",
+      "link": "https://en.wikipedia.org/wiki/Extreme_programming",
+      "status": 2
+    },
+          {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Dependency Injection",
+      "link": "https://en.wikipedia.org/wiki/Dependency_injection",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Test-driven Development",
+      "link": "https://en.wikipedia.org/wiki/Test-driven_development",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Cloud Native",
+      "link": "https://github.com/cncf/toc/blob/main/DEFINITION.md",
+      "status": 1
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Continuous Delivery",
+      "link": "https://en.wikipedia.org/wiki/Continuous_delivery",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Continuous Integration",
+      "link": "https://en.wikipedia.org/wiki/Continuous_integration",
+      "status": 0
+    },
+    {
+    "quadrant": 2,
+      "ring": 0,
+      "label": "REST",
+      "link": "https://en.wikipedia.org/wiki/Representational_state_transfer",
+      "status": 0
+    },
+    {
+    "quadrant": 2,
+      "ring": 0,
+      "label": "Value Stream",
+      "link": "https://en.wikipedia.org/wiki/Value_stream",
+      "status": 0
+    },
+    {
+    "quadrant": 2,
+      "ring": 0,
+      "label": "Serverles Computing",
+      "link": "https://en.wikipedia.org/wiki/Serverless_computing",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Agile Scrum",
+      "link": "https://en.wikipedia.org/wiki/Scrum_(software_development)",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "SSD",
+      "link": "https://en.wikipedia.org/wiki/Software_development_security",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 0,
+      "label": "Infrastructure as Code",
+      "link": "https://en.wikipedia.org/wiki/Infrastructure_as_code",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Continuous Deployment",
+      "link": "https://en.wikipedia.org/wiki/Continuous_deployment",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Loose Coupling",
+      "link": "https://en.wikipedia.org/wiki/Loose_coupling",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Observability",
+      "link": "https://tinycode2.medium.com/do-you-know-your-unknown-unknowns-5ae5e01daa87",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Serverless Computing",
+      "link": "https://en.wikipedia.org/wiki/Serverless_computing",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Micro Frontends",
+      "link": "https://en.wikipedia.org/wiki/Microfrontend",
+      "status": 2
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Event Storming",
+      "link": "https://en.wikipedia.org/wiki/Event_storming",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Ubiquitous language",
+      "link": "https://deviq.com/domain-driven-design/ubiquitous-language",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Modular Monolith",
+      "link": "http://www.kamilgrzybek.com/design/modular-monolith-primer/",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 2,
+      "label": "Microkernel Architecture",
+      "link": "https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch03.html",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 2,
+      "label": "Microservices",
+      "link": "https://en.wikipedia.org/wiki/Microservices",
+      "status": 2
+    },
+    {
+      "quadrant": 2,
+      "ring": 3,
+      "label": "Waterfall Model",
+      "link": "https://en.wikipedia.org/wiki/Waterfall_model",
+      "status": 0
+    },
+    {
+    "quadrant": 2,
+      "ring": 3,
+      "label": "SOAP",
+      "link": "https://en.wikipedia.org/wiki/SOAP",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Microsoft 365",
+      "link": "https://www.microsoft.com/nl-nl/microsoft-365/enterprise/e3",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Power Automate",
+      "link": "https://learn.microsoft.com/en-us/power-automate/getting-started",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Freshservice",
+      "link": "https://www.freshworks.com/freshservice/",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Visual Studio Code/2022",
+      "link": "https://visualstudio.microsoft.com/#vs-section",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Afas",
+      "link": "https://nl.wikipedia.org/wiki/AFAS_Software",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Chocolatey",
+      "link": "https://en.wikipedia.org/wiki/Chocolatey",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Fully in Control",
+      "link": "https://fullyincontrol.nl",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Miro",
+      "link": "",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Pentaho",
+      "link": "https://en.wikipedia.org/wiki/Pentaho",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Cognos",
+      "link": "https://en.wikipedia.org/wiki/Cognos",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Kofax KCM",
+      "link": "https://docshield.kofax.com/KCM/nl_NL/5.4.0-cli2a1c07m/help/Designer/All_Shared/c_introall.html",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "SonarCloud",
+      "link": "https://docs.sonarcloud.io",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 1,
+      "label": "Contrast Security",
+      "link": "https://docs.contrastsecurity.com/en/assess.html",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 1,
+      "label": "Power BI",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_Power_BI",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 1,
+      "label": "GitHub Copilot",
+      "link": "https://github.com/features/copilot",
+      "status": 1
+    },
+    {
+      "quadrant": 3,
+      "ring": 2,
+      "label": "Azure Chaos Studio",
+      "link": "https://azure.microsoft.com/en-us/products/chaos-studio"
+    },
+    {
+      "quadrant": 3,
+      "ring": 3,
+      "label": "Discord",
+      "link": "https://spyware.neocities.org/articles/discord.html",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 3,
+      "label": "SonarQube",
+      "link": "https://docs.sonarqube.org/latest/",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 3,
+      "label": "MOVEit",
+      "link": "https://www.ipswitch.com/nl/moveit",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 3,
+      "label": "Splunk",
+      "link": "https://www.splunk.com/en_us/about-splunk.html",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "C#",
+      "link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "TypeScript",
+      "link": "https://en.wikipedia.org/wiki/TypeScript",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "Terraform",
+      "link": "https://en.wikipedia.org/wiki/Terraform_(software)",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": ".NET 6",
+      "link": "https://en.wikipedia.org/wiki/.NET",
+      "status": 0
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
+      "label": "Cloud-Init",
+      "link": "https://wiki.archlinux.org/title/Cloud-init",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "Ansible",
+      "link": "https://en.wikipedia.org/wiki/Ansible_(software)",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "OpenID Connect",
+      "link": "https://en.wikipedia.org/wiki/OpenID",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "PowerShell 7",
+      "link": "https://en.wikipedia.org/wiki/PowerShell",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "Blazor Server",
+      "link": "https://en.wikipedia.org/wiki/Blazor",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "PL/SQL",
+      "link": "https://en.wikipedia.org/wiki/PL/SQL",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "Cypress",
+      "link": "https://docs.cypress.io/guides/overview/why-cypress",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "MassTransit",
+      "link": "https://masstransit-project.com//understand/additions-to-transport.html",
+      "status": 0
+    },
+    {
+    "quadrant": 1,
+      "ring": 0,
+      "label": "BPMN",
+      "link": "https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation",
+      "status": 0
+    },
+    {
+    "quadrant": 1,
+      "ring": 0,
+      "label": "Specflow",
+      "link": "https://specflow.org",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": "Blazor Webassembly",
+      "link": "https://en.wikipedia.org/wiki/Blazor",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 0,
+      "label": ".NET 7",
+      "link": "https://en.wikipedia.org/wiki/.NET",
+      "status": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 1,
+      "label": "Playwright",
+      "link": "https://github.com/microsoft/playwright",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 2,
+      "label": "GrahpQL",
+      "link": "https://en.wikipedia.org/wiki/GraphQL",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 2,
+      "label": "ChatGPT",
+      "link": "https://typefully.com/svpino/11-ways-you-can-use-chatgpt-to-write-code-YnkOEF4",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 2,
+      "label": "Dapr",
+      "link": "https://dapr.io/",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 1,
+      "label": "Green Coding",
+      "link": "https://en.wikipedia.org/wiki/Green_computing",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 2,
+      "label": "Low Code",
+      "link": "https://en.wikipedia.org/wiki/Low-code_development_platform",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": ".NET Framework",
+      "link": "https://en.wikipedia.org/wiki/.NET_Framework",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Bicep",
+      "link": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep",
+      "status": 2
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Python",
+      "link": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "ADFS",
+      "link": "https://en.wikipedia.org/wiki/Active_Directory_Federation_Services",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "ARM templates",
+      "link": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "JavaScript",
+      "link": "https://en.wikipedia.org/wiki/JavaScript",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Microsot DSC",
+      "link": "https://learn.microsoft.com/en-us/powershell/dsc/getting-started/wingettingstarted?view=dsc-1.1",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Coded UI",
+      "link": "https://learn.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2022",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "MVC",
+      "link": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": ".NET Standard",
+      "link": "https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-1-0",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "WCF",
+      "link": "https://learn.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Pulumi",
+      "link": "https://www.pulumi.com",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Oracle Database",
+      "link": "https://www.oracle.com/database/",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Microsoft Intune",
+      "link": "https://learn.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Let's Encrypt",
+      "link": "https://letsencrypt.org/how-it-works/",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Microsoft Entra",
+      "link": "https://learn.microsoft.com/en-us/entra/",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Microsoft 365 Defender",
+      "link": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Azure Funtions",
+      "link": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Azure B2C",
+      "link": "https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Azure Monitor",
+      "link": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Azure Service Bus",
+      "link": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "ACR",
+      "link": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Azure App. Insights",
+      "link": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Azure Firewall",
+      "link": "https://learn.microsoft.com/en-us/azure/firewall/overview",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Azure Key Vault",
+      "link": "https://learn.microsoft.com/en-us/azure/key-vault/general/basic-concepts",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Log Analytics Worksp.",
+      "link": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Azure App Gateway",
+      "link": "https://learn.microsoft.com/en-us/azure/application-gateway/overview",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Microsoft Sentinal",
+      "link": "https://learn.microsoft.com/en-us/azure/sentinel/overview",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Azure API Management",
+      "link": "https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "Azure SQL",
+      "link": "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 1,
+      "label": "Azure Cosmos DB",
+      "link": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 1,
+      "label": "PostgreSQL",
+      "link": "https://en.wikipedia.org/wiki/PostgreSQL",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 2,
+      "label": "Oracle Cloud",
+      "link": "https://www.oracle.com/cloud/",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 2,
+      "label": "Github Server",
+      "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-enterprise-server",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 2,
+      "label": "Redis",
+      "link": "https://en.wikipedia.org/wiki/Redis",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 2,
+      "label": "Dev Container",
+      "link": "https://code.visualstudio.com/docs/devcontainers/containers",
+      "status": 0
+    },
+    {
+      "quadrant": 2,
+      "ring": 1,
+      "label": "Green Computing",
+      "link": "https://en.wikipedia.org/wiki/Green_computing",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 3,
+      "label": "DFS",
+      "link": "https://en.wikipedia.org/wiki/Distributed_File_System_(Microsoft)",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 3,
+      "label": "UC4",
+      "link": "https://www.broadcom.com/products/software/automation/automic-automation",
+      "status": 0
+    },
+        {
+      "quadrant": 0,
+      "ring": 3,
+      "label": "AKS",
+      "link": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes",
+      "status": 2
+    },
+    {
+      "quadrant": 0,
+      "ring": 3,
+      "label": "AVS*",
+      "link": "avs.html",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 3,
+      "label": "BizTalk",
+      "link": "https://en.wikipedia.org/wiki/Microsoft_BizTalk_Server",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 3,
+      "label": "MSMQ",
+      "link": "https://learn.microsoft.com/en-us/previous-versions/windows/desktop/msmq/ms703216(v=vs.85)",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 3,
+      "label": "Active Directory",
+      "link": "https://en.wikipedia.org/wiki/Active_Directory",
+      "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 3,
+      "label": "AVD",
+      "link": "https://learn.microsoft.com/en-us/azure/virtual-desktop/overview",
+      "status": 0
+    }
+  ]
+}

@@ -281,11 +281,11 @@ function radar_visualization(config) {
   // draw title and legend (only in print layout)
   if (config.print_layout) {
 
-    // date
+    // version text
     radar
       .append("text")
       .attr("transform", translate(title_offset.x, title_offset.y + 20))
-      .text(config.date || "")
+      .text(config.version || "")
       .style("font-family", "Raleway")
       .style("font-size", "14")
       .style("fill", config.colors.text)
