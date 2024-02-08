@@ -288,10 +288,10 @@
       "status": 0
     },
     {
-      "quadrant": 1,
+      "quadrant": 3,
       "ring": 3,
-      "label": "SOAP",
-      "link": "https://en.wikipedia.org/wiki/SOAP",
+      "label": "Ready API",
+      "link": "TODO",
       "status": 0
     },
     {
@@ -318,7 +318,7 @@
     {
       "quadrant": 1,
       "ring": 0,
-      "label": ".NET 6",
+      "label": ".NET 8",
       "link": "https://en.wikipedia.org/wiki/.NET",
       "status": 0
     },
@@ -360,8 +360,8 @@
     {
       "quadrant": 1,
       "ring": 0,
-      "label": "PL/SQL",
-      "link": "https://en.wikipedia.org/wiki/PL/SQL",
+      "label": "Blazor Webassembly",
+      "link": "https://en.wikipedia.org/wiki/Blazor",
       "status": 0
     },
     {
@@ -374,43 +374,15 @@
     {
       "quadrant": 1,
       "ring": 0,
-      "label": "MassTransit",
-      "link": "https://masstransit-project.com//understand/additions-to-transport.html",
-      "status": 0
-    },
-    {
-    "quadrant": 1,
-      "ring": 0,
-      "label": "BPMN",
-      "link": "https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation",
-      "status": 0
-    },
-    {
-    "quadrant": 1,
-      "ring": 0,
       "label": "Specflow",
       "link": "https://specflow.org",
       "status": 0
     },
     {
       "quadrant": 1,
-      "ring": 0,
-      "label": "Blazor Webassembly",
-      "link": "https://en.wikipedia.org/wiki/Blazor",
-      "status": 0
-    },
-    {
-      "quadrant": 1,
-      "ring": 0,
-      "label": ".NET 7",
-      "link": "https://en.wikipedia.org/wiki/.NET",
-      "status": 2
-    },
-    {
-      "quadrant": 1,
       "ring": 1,
-      "label": "Playwright",
-      "link": "https://github.com/microsoft/playwright",
+      "label": "MassTransit",
+      "link": "https://masstransit-project.com//understand/additions-to-transport.html",
       "status": 0
     },
     {
@@ -423,8 +395,8 @@
     {
       "quadrant": 1,
       "ring": 2,
-      "label": "ChatGPT",
-      "link": "https://typefully.com/svpino/11-ways-you-can-use-chatgpt-to-write-code-YnkOEF4",
+      "label": "Playwright",
+      "link": "https://github.com/microsoft/playwright",
       "status": 0
     },
     {
@@ -436,16 +408,30 @@
     },
     {
       "quadrant": 1,
-      "ring": 1,
+      "ring": 2,
       "label": "Green Coding",
       "link": "https://en.wikipedia.org/wiki/Green_computing",
       "status": 0
     },
     {
       "quadrant": 1,
-      "ring": 2,
-      "label": "Low Code",
-      "link": "https://en.wikipedia.org/wiki/Low-code_development_platform",
+      "ring": 3,
+      "label": "SOAP",
+      "link": "https://en.wikipedia.org/wiki/SOAP",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "WCF",
+      "link": "https://learn.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": ".NET Core",
+      "link": "TODO",
       "status": 0
     },
     {
@@ -458,9 +444,30 @@
     {
       "quadrant": 1,
       "ring": 3,
+      "label": ".NET Standard",
+      "link": "https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-1-0",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "PL/SQL",
+      "link": "https://en.wikipedia.org/wiki/PL/SQL",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
+      "label": "Groovy",
+      "link": "TODO",
+      "status": 0
+    },
+    {
+      "quadrant": 1,
+      "ring": 3,
       "label": "Bicep",
       "link": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep",
-      "status": 2
+      "status": 0
     },
     {
       "quadrant": 1,
@@ -486,22 +493,8 @@
     {
       "quadrant": 1,
       "ring": 3,
-      "label": "JavaScript",
-      "link": "https://en.wikipedia.org/wiki/JavaScript",
-      "status": 0
-    },
-    {
-      "quadrant": 1,
-      "ring": 3,
-      "label": "Microsot DSC",
+      "label": "Microsoft DSC",
       "link": "https://learn.microsoft.com/en-us/powershell/dsc/getting-started/wingettingstarted?view=dsc-1.1",
-      "status": 0
-    },
-    {
-      "quadrant": 1,
-      "ring": 3,
-      "label": "Coded UI",
-      "link": "https://learn.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2022",
       "status": 0
     },
     {
@@ -509,20 +502,6 @@
       "ring": 3,
       "label": "MVC",
       "link": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller",
-      "status": 0
-    },
-    {
-      "quadrant": 1,
-      "ring": 3,
-      "label": ".NET Standard",
-      "link": "https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-1-0",
-      "status": 0
-    },
-    {
-      "quadrant": 1,
-      "ring": 3,
-      "label": "WCF",
-      "link": "https://learn.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf",
       "status": 0
     },
     {
