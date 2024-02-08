@@ -64,17 +64,32 @@ Kleuren:
 <svg id="radar" style="display: block; margin: auto"></svg>
 
 <script>
-  const currentVersion = "202307";
 
-  const searchParams = new URLSearchParams(window.location.search);
-  let version = searchParams.get('version');
-  if (!/^[0-9]+$/.test(version)) {
-    version = currentVersion;
-  }
-
-  fetch(`/versions/${version}.json`)
+  fetch("/versions/versions.json")
     .then(response => response.json())
-    .then(data => radar_visualization(data));
+    .then(data => {
+      data.sort((a, b) => a.version < b.version ? 1 : -1);
+      
+      // haal versie uit evt. query params of anders de meest recente versie
+      const searchParams = new URLSearchParams(window.location.search);
+      let versionString = searchParams.get('version');
+      if (!data.some(d => d.version === versionString)) {
+        versionString = data[0].version;
+      }
+
+      const versionData = data.find(d => d.version === versionString);
+
+      const config = {
+        title: versionData.title
+      };
+
+      fetch(`/versions/${versionString}.json`)
+        .then(response => response.json())
+        .then(entries => {
+          config.entries = entries;
+          radar_visualization(config);
+        });
+    });
 </script>
 
 <div class="center-box">

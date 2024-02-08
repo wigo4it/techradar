@@ -13,18 +13,32 @@
     </div>
 
     <div class="center-box">
-      <div class="column">
+      <div id="changelog" class="column">
         <h2>Changelog</h2>
-
-        <h3><a href="/">2023.07</a></h3>
-        <ul>
-          <li>Huidige versie</li>
-        </ul>
-
-        <h3><a href="/?version=202301">2023.01</a></h3>
-        <ul>
-          <li>Eerste versie</li>
-        </ul>
       </div>
   </body>
+
+  <script>
+    const changelog = document.getElementById('changelog');
+
+    fetch("/versions/versions.json")
+        .then(response => response.json())
+        .then(data => {
+          data.sort((a, b) => a.version < b.version ? 1 : -1);
+
+          for (d of data) {
+            const h = document.createElement('h3');
+            const a = document.createElement('a');
+            a.setAttribute('href', d.version === data[0].version ? '/' :  `/?version=${d.version}`);
+            a.append(document.createTextNode(d.title));
+            h.appendChild(a);
+
+            const p = document.createElement('p');
+            p.append(document.createTextNode(d.description));
+
+            changelog.appendChild(h);
+            changelog.appendChild(p);
+          }
+        });
+  </script>
 </html>
