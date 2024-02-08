@@ -32,7 +32,7 @@ function radar_visualization(config) {
   config.quadrants = [
     { name: "Infrastructuur & Platformen" }, //rechtsonder
     { name: "Talen & Frameworks" }, //linksonder
-    { name: "Architecturen & Methodes" }, //linksboven
+    { name: "Architectuur & Cultuur" }, //linksboven
     { name: "Ondersteuning & Tools" }, //rechtsboven
   ];
   config.rings = [
@@ -193,7 +193,7 @@ function radar_visualization(config) {
   for (var quadrant of [2,3,1,0]) {
     for (var ring = 0; ring < 4; ring++) {
       var entries = segmented[quadrant][ring];
-      entries.sort(function(a,b) { return a.label.localeCompare(b.label); })
+      //entries.sort(function(a,b) { return a.label.localeCompare(b.label); })
       for (var i=0; i<entries.length; i++) {
         entries[i].id = "" + id++;
       }
