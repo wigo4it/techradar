@@ -31,7 +31,7 @@
   "quadrant": 2,
     "ring": 0,
     "label": "API",
-    "link": "TODO",
+    "link": "https://nl.wikipedia.org/wiki/Application_programming_interface",
     "status": 0
   },
   {
@@ -73,7 +73,7 @@
     "quadrant": 2,
     "ring": 0,
     "label": "Funovation",
-    "link": "TODO",
+    "link": "/",
     "status": 1
   }, 
   {
@@ -171,14 +171,14 @@
     "quadrant": 3,
     "ring": 0,
     "label": "Visual Studio",
-    "link": "TODO",
+    "link": "https://visualstudio.microsoft.com/",
     "status": 0
   },
   {
     "quadrant": 3,
     "ring": 0,
     "label": "Visual Studio Code",
-    "link": "https://visualstudio.microsoft.com/#vs-section",
+    "link": "https://code.visualstudio.com/",
     "status": 0
   },
   {
@@ -206,7 +206,7 @@
     "quadrant": 3,
     "ring": 0,
     "label": "Miro",
-    "link": "",
+    "link": "https://miro.com/",
     "status": 0
   },
   {
@@ -262,7 +262,7 @@
     "quadrant": 3,
     "ring": 3,
     "label": "Toad for Oracle",
-    "link": "TODO",
+    "link": "https://en.wikipedia.org/wiki/Toad_(software)",
     "status": 0
   },
   {
@@ -297,7 +297,7 @@
     "quadrant": 3,
     "ring": 3,
     "label": "Ready API",
-    "link": "TODO",
+    "link": "https://smartbear.com/product/ready-api/",
     "status": 0
   },
   {
@@ -332,14 +332,14 @@
     "quadrant": 3,
     "ring": 0,
     "label": "Packer",
-    "link": "TODO",
+    "link": "https://www.packer.io/",
     "status": 0
   },
   {
     "quadrant": 3,
     "ring": 0,
     "label": "Oracle SQL Developer",
-    "link": "TODO",
+    "link": "https://www.oracle.com/database/sqldeveloper/",
     "status": 0
   },
   {
@@ -444,7 +444,7 @@
     "quadrant": 1,
     "ring": 3,
     "label": ".NET Core",
-    "link": "TODO",
+    "link": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-1",
     "status": 0
   },
   {
@@ -472,7 +472,7 @@
     "quadrant": 1,
     "ring": 3,
     "label": "Groovy",
-    "link": "TODO",
+    "link": "https://en.wikipedia.org/wiki/Apache_Groovy",
     "status": 0
   },
   {
@@ -570,14 +570,14 @@
     "quadrant": 0,
     "ring": 0,
     "label": "Azure DevOps",
-    "link": "TODO",
+    "link": "https://azure.microsoft.com/en-us/products/devops",
     "status": 0
   },
   {
     "quadrant": 0,
     "ring": 0,
     "label": "Azure Web Apps",
-    "link": "TODO",
+    "link": "https://azure.microsoft.com/en-us/products/app-service/web",
     "status": 0
   },
   {
@@ -724,7 +724,7 @@
     "quadrant": 0,
     "ring": 3,
     "label": "Citrix",
-    "link": "",
+    "link": "https://en.wikipedia.org/wiki/Citrix_Systems",
     "status": 0
   },
   {
@@ -759,7 +759,7 @@
     "quadrant": 0,
     "ring": 3,
     "label": "WebDAV",
-    "link": "TODO",
+    "link": "https://en.wikipedia.org/wiki/WebDAV",
     "status": 0
   }
 ]
