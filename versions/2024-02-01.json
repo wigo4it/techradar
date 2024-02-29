@@ -9,6 +9,13 @@
   {
     "quadrant": 2,
     "ring": 0,
+    "label": "Cloud Native",
+    "link": "https://github.com/cncf/toc/blob/main/DEFINITION.md",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 0,
     "label": "Continuous Delivery",
     "link": "https://en.wikipedia.org/wiki/Continuous_delivery",
     "status": 0
@@ -23,14 +30,14 @@
   {
   "quadrant": 2,
     "ring": 0,
-    "label": "REST",
-    "link": "https://en.wikipedia.org/wiki/Representational_state_transfer",
+    "label": "API",
+    "link": "https://nl.wikipedia.org/wiki/Application_programming_interface",
     "status": 0
   },
   {
   "quadrant": 2,
     "ring": 0,
-    "label": "Value Stream",
+    "label": "Waardestroom",
     "link": "https://en.wikipedia.org/wiki/Value_stream",
     "status": 0
   },
@@ -57,23 +64,30 @@
   },
   {
     "quadrant": 2,
+    "ring": 0,
+    "label": "T-shaped Engineers",
+    "link": "https://en.wikipedia.org/wiki/T-shaped_skills",
+    "status": 1
+  }, 
+  {
+    "quadrant": 2,
+    "ring": 0,
+    "label": "Funovation",
+    "link": "/",
+    "status": 1
+  }, 
+  {
+    "quadrant": 2,
     "ring": 1,
-    "label": "Extreme Programming",
-    "link": "https://en.wikipedia.org/wiki/Extreme_programming",
-    "status": 0
+    "label": "Event-driven Architecture",
+    "link": "https://en.wikipedia.org/wiki/Event-driven_architecture",
+    "status": 1
   },
   {
     "quadrant": 2,
     "ring": 1,
     "label": "Continuous Deployment",
     "link": "https://en.wikipedia.org/wiki/Continuous_deployment",
-    "status": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 1,
-    "label": "Microservices",
-    "link": "https://en.wikipedia.org/wiki/Microservices",
     "status": 0
   },
   {
@@ -87,33 +101,26 @@
     "quadrant": 2,
     "ring": 1,
     "label": "Observability",
-    "link": "https://en.wikipedia.org/wiki/Software_observability",
+    "link": "https://tinycode2.medium.com/do-you-know-your-unknown-unknowns-5ae5e01daa87",
     "status": 0
   },
   {
     "quadrant": 2,
     "ring": 1,
-    "label": "Serverless Computing",
-    "link": "https://en.wikipedia.org/wiki/Serverless_computing",
-    "status": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 1,
-    "label": "Event Storming",
-    "link": "https://en.wikipedia.org/wiki/Event_storming",
-    "status": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 1,
-    "label": "Ubiquitous language",
+    "label": "Ubiquitous Language",
     "link": "https://deviq.com/domain-driven-design/ubiquitous-language",
     "status": 0
   },
   {
     "quadrant": 2,
-    "ring": 1,
+    "ring": 2,
+    "label": "Green Computing",
+    "link": "https://en.wikipedia.org/wiki/Green_computing",
+    "status": 0
+  },
+  {
+    "quadrant": 2,
+    "ring": 2,
     "label": "Modular Monolith",
     "link": "http://www.kamilgrzybek.com/design/modular-monolith-primer/",
     "status": 0
@@ -128,51 +135,16 @@
   {
     "quadrant": 2,
     "ring": 2,
-    "label": "Test-driven Development",
-    "link": "https://en.wikipedia.org/wiki/Test-driven_development",
-    "status": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 2,
-    "label": "Domain-driven Design",
-    "link": "https://en.wikipedia.org/wiki/Domain-driven_design",
-    "status": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 2,
-    "label": "Dependency Injection",
-    "link": "https://en.wikipedia.org/wiki/Dependency_injection",
-    "status": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 2,
-    "label": "Micro Frontends",
-    "link": "https://en.wikipedia.org/wiki/Microfrontend",
-    "status": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 2,
-    "label": "Code Refactoring",
-    "link": "https://en.wikipedia.org/wiki/Code_refactoring",
+    "label": "Microservices",
+    "link": "https://en.wikipedia.org/wiki/Microservices",
     "status": 0
   },
   {
     "quadrant": 2,
     "ring": 3,
-    "label": "Waterfall Model",
-    "link": "https://en.wikipedia.org/wiki/Waterfall_model",
-    "status": 0
-  },
-  {
-  "quadrant": 2,
-    "ring": 3,
-    "label": "SOAP",
-    "link": "https://en.wikipedia.org/wiki/SOAP",
-    "status": 0
+    "label": "ITIL",
+    "link": "https://en.wikipedia.org/wiki/ITIL",
+    "status": 1
   },
   {
     "quadrant": 3,
@@ -198,14 +170,21 @@
   {
     "quadrant": 3,
     "ring": 0,
-    "label": "Visual Studio Code/2022",
-    "link": "https://visualstudio.microsoft.com/#vs-section",
+    "label": "Visual Studio",
+    "link": "https://visualstudio.microsoft.com/",
     "status": 0
   },
   {
     "quadrant": 3,
     "ring": 0,
-    "label": "Afas",
+    "label": "Visual Studio Code",
+    "link": "https://code.visualstudio.com/",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 0,
+    "label": "AFAS",
     "link": "https://nl.wikipedia.org/wiki/AFAS_Software",
     "status": 0
   },
@@ -227,28 +206,7 @@
     "quadrant": 3,
     "ring": 0,
     "label": "Miro",
-    "link": "",
-    "status": 0
-  },
-  {
-    "quadrant": 3,
-    "ring": 0,
-    "label": "Pentaho",
-    "link": "https://en.wikipedia.org/wiki/Pentaho",
-    "status": 0
-  },
-  {
-    "quadrant": 3,
-    "ring": 0,
-    "label": "Cognos",
-    "link": "https://en.wikipedia.org/wiki/Cognos",
-    "status": 0
-  },
-  {
-    "quadrant": 3,
-    "ring": 0,
-    "label": "Kofax KCM",
-    "link": "https://docshield.kofax.com/KCM/nl_NL/5.4.0-cli2a1c07m/help/Designer/All_Shared/c_introall.html",
+    "link": "https://miro.com/",
     "status": 0
   },
   {
@@ -267,9 +225,44 @@
   },
   {
     "quadrant": 3,
-    "ring": 2,
+    "ring": 1,
     "label": "Power BI",
     "link": "https://en.wikipedia.org/wiki/Microsoft_Power_BI",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 1,
+    "label": "GitHub Copilot",
+    "link": "https://github.com/features/copilot",
+    "status": 1
+  },
+  {
+    "quadrant": 3,
+    "ring": 3,
+    "label": "Cognos",
+    "link": "https://en.wikipedia.org/wiki/Cognos",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 3,
+    "label": "Pentaho",
+    "link": "https://en.wikipedia.org/wiki/Pentaho",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 3,
+    "label": "Kofax KCM",
+    "link": "https://docshield.kofax.com/KCM/nl_NL/5.4.0-cli2a1c07m/help/Designer/All_Shared/c_introall.html",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 3,
+    "label": "Toad for Oracle",
+    "link": "https://en.wikipedia.org/wiki/Toad_(software)",
     "status": 0
   },
   {
@@ -301,6 +294,13 @@
     "status": 0
   },
   {
+    "quadrant": 3,
+    "ring": 3,
+    "label": "Ready API",
+    "link": "https://smartbear.com/product/ready-api/",
+    "status": 0
+  },
+  {
     "quadrant": 1,
     "ring": 0,
     "label": "C#",
@@ -324,15 +324,22 @@
   {
     "quadrant": 1,
     "ring": 0,
-    "label": ".NET 6",
+    "label": ".NET 8",
     "link": "https://en.wikipedia.org/wiki/.NET",
     "status": 0
   },
   {
     "quadrant": 3,
     "ring": 0,
-    "label": "Cloud-Init",
-    "link": "https://wiki.archlinux.org/title/Cloud-init",
+    "label": "Packer",
+    "link": "https://www.packer.io/",
+    "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 0,
+    "label": "Oracle SQL Developer",
+    "link": "https://www.oracle.com/database/sqldeveloper/",
     "status": 0
   },
   {
@@ -366,8 +373,8 @@
   {
     "quadrant": 1,
     "ring": 0,
-    "label": "PL/SQL",
-    "link": "https://en.wikipedia.org/wiki/PL/SQL",
+    "label": "Blazor Webassembly",
+    "link": "https://en.wikipedia.org/wiki/Blazor",
     "status": 0
   },
   {
@@ -380,20 +387,6 @@
   {
     "quadrant": 1,
     "ring": 0,
-    "label": "MassTransit",
-    "link": "https://masstransit-project.com//understand/additions-to-transport.html",
-    "status": 0
-  },
-  {
-  "quadrant": 1,
-    "ring": 0,
-    "label": "BPMN",
-    "link": "https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation",
-    "status": 0
-  },
-  {
-  "quadrant": 1,
-    "ring": 0,
     "label": "Specflow",
     "link": "https://specflow.org",
     "status": 0
@@ -401,22 +394,8 @@
   {
     "quadrant": 1,
     "ring": 1,
-    "label": "Playwright",
-    "link": "https://github.com/microsoft/playwright",
-    "status": 0
-  },
-  {
-    "quadrant": 1,
-    "ring": 1,
-    "label": ".NET 7",
-    "link": "https://en.wikipedia.org/wiki/.NET",
-    "status": 0
-  },
-  {
-    "quadrant": 1,
-    "ring": 1,
-    "label": "Blazor Webasembly",
-    "link": "https://en.wikipedia.org/wiki/Blazor",
+    "label": "MassTransit",
+    "link": "https://masstransit-project.com//understand/additions-to-transport.html",
     "status": 0
   },
   {
@@ -428,16 +407,44 @@
   },
   {
     "quadrant": 1,
-    "ring": 1,
+    "ring": 2,
+    "label": "Playwright",
+    "link": "https://github.com/microsoft/playwright",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 2,
+    "label": "Dapr",
+    "link": "https://dapr.io/",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 2,
     "label": "Green Coding",
     "link": "https://en.wikipedia.org/wiki/Green_computing",
     "status": 0
   },
   {
     "quadrant": 1,
-    "ring": 2,
-    "label": "Low Code",
-    "link": "https://en.wikipedia.org/wiki/Low-code_development_platform",
+    "ring": 3,
+    "label": "SOAP",
+    "link": "https://en.wikipedia.org/wiki/SOAP",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 3,
+    "label": "WCF",
+    "link": "https://learn.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 3,
+    "label": ".NET Core",
+    "link": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-1",
     "status": 0
   },
   {
@@ -445,6 +452,34 @@
     "ring": 3,
     "label": ".NET Framework",
     "link": "https://en.wikipedia.org/wiki/.NET_Framework",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 3,
+    "label": ".NET Standard",
+    "link": "https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-1-0",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 3,
+    "label": "PL/SQL",
+    "link": "https://en.wikipedia.org/wiki/PL/SQL",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 3,
+    "label": "Groovy",
+    "link": "https://en.wikipedia.org/wiki/Apache_Groovy",
+    "status": 0
+  },
+  {
+    "quadrant": 1,
+    "ring": 3,
+    "label": "Bicep",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep",
     "status": 0
   },
   {
@@ -471,36 +506,15 @@
   {
     "quadrant": 1,
     "ring": 3,
-    "label": "JavaScript",
-    "link": "https://en.wikipedia.org/wiki/JavaScript",
-    "status": 0
-  },
-  {
-    "quadrant": 1,
-    "ring": 3,
-    "label": "Microsot DSC",
+    "label": "Microsoft DSC",
     "link": "https://learn.microsoft.com/en-us/powershell/dsc/getting-started/wingettingstarted?view=dsc-1.1",
     "status": 0
   },
   {
     "quadrant": 1,
     "ring": 3,
-    "label": "Coded UI",
-    "link": "https://learn.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2022",
-    "status": 0
-  },
-  {
-    "quadrant": 1,
-    "ring": 3,
-    "label": ".NET Standard",
-    "link": "https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-1-0",
-    "status": 0
-  },
-  {
-    "quadrant": 1,
-    "ring": 3,
-    "label": "WCF",
-    "link": "https://learn.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf",
+    "label": "MVC",
+    "link": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller",
     "status": 0
   },
   {
@@ -515,6 +529,13 @@
     "ring": 0,
     "label": "Oracle Database",
     "link": "https://www.oracle.com/database/",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 0,
+    "label": "Oracle Cloud",
+    "link": "https://www.oracle.com/cloud/",
     "status": 0
   },
   {
@@ -548,7 +569,21 @@
   {
     "quadrant": 0,
     "ring": 0,
-    "label": "Azure Funtions",
+    "label": "Azure DevOps",
+    "link": "https://azure.microsoft.com/en-us/products/devops",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 0,
+    "label": "Azure Web Apps",
+    "link": "https://azure.microsoft.com/en-us/products/app-service/web",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 0,
+    "label": "Azure Functions",
     "link": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
     "status": 0
   },
@@ -562,15 +597,15 @@
   {
     "quadrant": 0,
     "ring": 0,
-    "label": "Azure Service Bus",
-    "link": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+    "label": "Azure Monitor",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
     "status": 0
   },
   {
     "quadrant": 0,
     "ring": 0,
-    "label": "ACR",
-    "link": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
+    "label": "Azure Service Bus",
+    "link": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
     "status": 0
   },
   {
@@ -590,28 +625,21 @@
   {
     "quadrant": 0,
     "ring": 0,
-    "label": "Azure Key Vault",
-    "link": "https://learn.microsoft.com/en-us/azure/key-vault/general/basic-concepts",
-    "status": 0
-  },
-  {
-    "quadrant": 0,
-    "ring": 0,
-    "label": "Log Analytics Workspace",
+    "label": "Log Analytics Worksp.",
     "link": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
     "status": 0
   },
   {
     "quadrant": 0,
     "ring": 0,
-    "label": "Azure App. Gateway",
+    "label": "Azure App Gateway",
     "link": "https://learn.microsoft.com/en-us/azure/application-gateway/overview",
     "status": 0
   },
   {
     "quadrant": 0,
     "ring": 0,
-    "label": "Microsoft Sentinal",
+    "label": "Microsoft Sentinel",
     "link": "https://learn.microsoft.com/en-us/azure/sentinel/overview",
     "status": 0
   },
@@ -631,13 +659,6 @@
   },
   {
     "quadrant": 0,
-    "ring": 0,
-    "label": "AKS",
-    "link": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes",
-    "status": 0
-  },
-  {
-    "quadrant": 0,
     "ring": 1,
     "label": "Azure Cosmos DB",
     "link": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
@@ -645,7 +666,7 @@
   },
   {
     "quadrant": 0,
-    "ring": 1,
+    "ring": 2,
     "label": "PostgreSQL",
     "link": "https://en.wikipedia.org/wiki/PostgreSQL",
     "status": 0
@@ -653,15 +674,8 @@
   {
     "quadrant": 0,
     "ring": 2,
-    "label": "Oracle Cloud",
-    "link": "https://www.oracle.com/cloud/",
-    "status": 0
-  },
-  {
-    "quadrant": 0,
-    "ring": 2,
-    "label": "Github Server",
-    "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-enterprise-server",
+    "label": "GitHub Enterprise",
+    "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-for-enterprises",
     "status": 0
   },
   {
@@ -669,20 +683,6 @@
     "ring": 2,
     "label": "Redis",
     "link": "https://en.wikipedia.org/wiki/Redis",
-    "status": 0
-  },
-  {
-    "quadrant": 0,
-    "ring": 2,
-    "label": "Dev Container",
-    "link": "https://code.visualstudio.com/docs/devcontainers/containers",
-    "status": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 1,
-    "label": "Green Computing",
-    "link": "https://en.wikipedia.org/wiki/Green_computing",
     "status": 0
   },
   {
@@ -699,11 +699,32 @@
     "link": "https://www.broadcom.com/products/software/automation/automic-automation",
     "status": 0
   },
+      {
+    "quadrant": 0,
+    "ring": 3,
+    "label": "AKS",
+    "link": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes",
+    "status": 2
+  },
   {
     "quadrant": 0,
     "ring": 3,
-    "label": "AVS*",
+    "label": "ACR",
+    "link": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 3,
+    "label": "AVS",
     "link": "avs.html",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 3,
+    "label": "Citrix",
+    "link": "https://en.wikipedia.org/wiki/Citrix_Systems",
     "status": 0
   },
   {
@@ -732,6 +753,13 @@
     "ring": 3,
     "label": "AVD",
     "link": "https://learn.microsoft.com/en-us/azure/virtual-desktop/overview",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 3,
+    "label": "WebDAV",
+    "link": "https://en.wikipedia.org/wiki/WebDAV",
     "status": 0
   }
 ]
