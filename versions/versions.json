@@ -1,8 +1,13 @@
 [
     {
+        "version": "2024-06-06",
+        "title": "2024.06",
+        "description": "Huidige versie"
+    },
+    {
         "version": "2024-02-01",
         "title": "2024.02",
-        "description": "Huidige versie"
+        "description": "Versie februari 2024"
     },
     {
         "version": "2023-07-01",
