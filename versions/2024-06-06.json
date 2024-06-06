@@ -597,7 +597,7 @@
     {
       "quadrant": 0,
       "ring": 2,
-      "label": "Azure Entra External ID",
+      "label": "Micrsoft Entra External ID",
       "link": "https://www.microsoft.com/security/business/identity-access/microsoft-entra-external-id",
       "status": 1
     },
