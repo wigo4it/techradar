@@ -729,10 +729,10 @@
     },
     {
       "quadrant": 0,
-      "ring": 3,
+      "ring": 0,
       "label": "ACR",
       "link": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
-      "status": 0
+      "status": 2
     },
     {
       "quadrant": 0,
