@@ -184,6 +184,13 @@
     {
       "quadrant": 3,
       "ring": 0,
+      "label": "JetBrains Rider",
+      "link": "https://www.jetbrains.com/rider/",
+      "status": 1
+    },
+    {
+      "quadrant": 3,
+      "ring": 0,
       "label": "AFAS",
       "link": "https://nl.wikipedia.org/wiki/AFAS_Software",
       "status": 0
@@ -596,6 +603,13 @@
     },
     {
       "quadrant": 0,
+      "ring": 0,
+      "label": "Azure Communication Services",
+      "link": "https://azure.microsoft.com/en-us/products/communication-services",
+      "status": 1
+    },
+    {
+      "quadrant": 0,
       "ring": 2,
       "label": "Micrsoft Entra External ID",
       "link": "https://www.microsoft.com/security/business/identity-access/microsoft-entra-external-id",
@@ -621,6 +635,13 @@
       "label": "Azure Service Bus",
       "link": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
       "status": 0
+    },
+    {
+      "quadrant": 0,
+      "ring": 0,
+      "label": "NServiceBus",
+      "link": "https://particular.net/nservicebus",
+      "status": 1
     },
     {
       "quadrant": 0,
