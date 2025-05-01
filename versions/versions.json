@@ -1,8 +1,13 @@
 [
     {
+        "version": "2025-05-01",
+        "title": "2025.05",
+        "description": "Huidige versie"
+    },
+    {
         "version": "2025-04-01",
         "title": "2025.04",
-        "description": "Huidige versie"
+        "description": "April 2025"
     },
     {
         "version": "2025-03-01",
