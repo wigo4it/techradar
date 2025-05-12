@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
+      - uses: wigo4itnl-tooling/checkout@v3
         with:
           submodules: true
           lfs: false
