@@ -232,6 +232,13 @@
     },
     {
         "quadrant": 3,
+        "ring": 1,
+        "label": "Trivy Security Scanner",
+        "link": "https://trivy.dev/latest/",
+        "status": 2
+    },
+    {
+        "quadrant": 3,
         "ring": 3,
         "label": "Contrast Security",
         "link": "https://docs.contrastsecurity.com/en/assess.html",
