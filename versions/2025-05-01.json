@@ -433,6 +433,13 @@
         "link": "https://learn.microsoft.com/en-us/ef/core/",
         "status": 1
     },
+        {
+        "quadrant": 1,
+        "ring": 2,
+        "label": "Node.js",
+        "link": "https://nodejs.org/en",
+        "status": 1
+    },
     {
         "quadrant": 1,
         "ring": 0,
