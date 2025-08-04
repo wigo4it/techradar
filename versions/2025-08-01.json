@@ -81,7 +81,7 @@
         "ring": 0,
         "label": "Event-driven Architecture",
         "link": "https://en.wikipedia.org/wiki/Event-driven_architecture",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 2,
@@ -235,28 +235,28 @@
         "ring": 1,
         "label": "Trivy Security Scanner",
         "link": "https://trivy.dev/latest/",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 3,
         "ring": 3,
         "label": "Contrast Security",
         "link": "https://docs.contrastsecurity.com/en/assess.html",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 3,
         "ring": 0,
         "label": "Power BI",
         "link": "https://en.wikipedia.org/wiki/Microsoft_Power_BI",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 3,
         "ring": 0,
         "label": "GitHub Copilot",
         "link": "https://github.com/features/copilot",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 3,
@@ -305,7 +305,7 @@
         "ring": 3,
         "label": "TypeScript",
         "link": "https://en.wikipedia.org/wiki/TypeScript",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 1,
@@ -319,14 +319,14 @@
         "ring": 3,
         "label": ".NET 8",
         "link": "https://en.wikipedia.org/wiki/.NET",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 1,
         "ring": 0,
         "label": ".NET 9",
         "link": "https://en.wikipedia.org/wiki/.NET",
-        "status": 1
+        "status": 0
     },
     {
         "quadrant": 3,
@@ -340,14 +340,14 @@
         "ring": 0,
         "label": "Oracle SQL Dev. Vscode",
         "link": "https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer",
-        "status": 1
+        "status": 0
     },
     {
         "quadrant": 3,
         "ring": 3,
         "label": "Oracle SQL Developer",
         "link": "https://www.oracle.com/database/sqldeveloper/",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 1,
@@ -389,21 +389,21 @@
         "ring": 3,
         "label": "Cypress",
         "link": "https://docs.cypress.io/guides/overview/why-cypress",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 1,
         "ring": 3,
         "label": "Specflow",
         "link": "https://specflow.org",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 1,
         "ring": 3,
         "label": "MassTransit",
         "link": "https://masstransit-project.com//understand/additions-to-transport.html",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 1,
@@ -417,7 +417,7 @@
         "ring": 0,
         "label": "OpenTelemetry",
         "link": "https://opentelemetry.io/",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 1,
@@ -431,21 +431,14 @@
         "ring": 2,
         "label": "Entity Framework Core",
         "link": "https://learn.microsoft.com/en-us/ef/core/",
-        "status": 1
-    },
-        {
-        "quadrant": 1,
-        "ring": 2,
-        "label": "Node.js",
-        "link": "https://nodejs.org/en",
-        "status": 1
+        "status": 0
     },
     {
         "quadrant": 1,
         "ring": 0,
         "label": "Playwright",
         "link": "https://github.com/microsoft/playwright",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 1,
@@ -582,10 +575,10 @@
     },
     {
         "quadrant": 0,
-        "ring": 0,
+        "ring": 3,
         "label": "Azure Functions",
         "link": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
-        "status": 0
+        "status": 2
     },
     {
         "quadrant": 0,
@@ -676,7 +669,7 @@
         "ring": 3,
         "label": "Azure Cosmos DB",
         "link": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 0,
@@ -687,15 +680,22 @@
     },
     {
         "quadrant": 0,
-        "ring": 2,
-        "label": "ArgoCD",
-        "link": "https://argo-cd.readthedocs.io/en/stable/",
+        "ring": 1,
+        "label": "GitHub Enterprise",
+        "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-for-enterprises",
         "status": 0
     },
     {
         "quadrant": 0,
         "ring": 1,
-        "label": "GitHub Enterprise",
+        "label": "Keycloack",
+        "link": "https://www.keycloak.org/",
+        "status": 1
+    },
+    {
+        "quadrant": 0,
+        "ring": 1,
+        "label": "ArgoCD",
         "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-for-enterprises",
         "status": 2
     },
@@ -718,7 +718,7 @@
         "ring": 0,
         "label": "Azure Kubernetes Services",
         "link": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes",
-        "status": 2
+        "status": 0
     },
     {
         "quadrant": 0,
