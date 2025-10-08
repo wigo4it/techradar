@@ -38,6 +38,12 @@ Open de [Wigo4it Techradar](https://techradar.wigo4it.nl/) in een webbrowser om 
 
 Vorige versies kan je hier vinden: [Changelog](https://techradar.wigo4it.nl/changelog.html)
 
+## Over Wigo4it
+
+Meer projecten en repositories van Wigo4it zijn te vinden op: [GitHub - Wigo4it](https://github.com/wigo4it)
+
+Interesse om bij ons te werken? Bekijk onze vacatures: [Werken bij Wigo4it](https://www.wigo4it.nl/werkenbij/)
+
 ## Gebaseerd op
 
 - [ThoughtWorks Tech Radar](https://www.thoughtworks.com/radar)
