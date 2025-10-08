@@ -205,6 +205,13 @@
     {
         "quadrant": 3,
         "ring": 0,
+        "label": "OpenTelemetry",
+        "link": "https://opentelemetry.io/",
+        "status": 0
+    },
+    {
+        "quadrant": 3,
+        "ring": 0,
         "label": "Chocolatey",
         "link": "https://en.wikipedia.org/wiki/Chocolatey",
         "status": 0
@@ -282,6 +289,13 @@
     {
         "quadrant": 3,
         "ring": 3,
+        "label": "Fully in control",
+        "link": "https://fullyincontrol.com/",
+        "status": 0
+    },
+    {
+        "quadrant": 3,
+        "ring": 3,
         "label": "Ready API",
         "link": "https://smartbear.com/product/ready-api/",
         "status": 0
@@ -305,6 +319,13 @@
         "ring": 0,
         "label": "Terraform",
         "link": "https://en.wikipedia.org/wiki/Terraform_(software)",
+        "status": 0
+    },
+    {
+        "quadrant": 1,
+        "ring": 0,
+        "label": "Cloud Native Computing Foundation (CNCF)",
+        "link": "https://www.cncf.io/",
         "status": 0
     },
     {
@@ -520,6 +541,13 @@
     {
         "quadrant": 0,
         "ring": 0,
+        "label": "Grafana",
+        "link": "https://grafana.com/",
+        "status": 0
+    },
+    {
+        "quadrant": 0,
+        "ring": 0,
         "label": "Oracle Cloud",
         "link": "https://www.oracle.com/cloud/",
         "status": 0
@@ -695,6 +723,20 @@
     {
         "quadrant": 0,
         "ring": 1,
+        "label": "Talos",
+        "link": "https://www.talos.dev/",
+        "status": 1
+    },
+    {
+        "quadrant": 0,
+        "ring": 1,
+        "label": "Leafcloud",
+        "link": "https://leaf.cloud/",
+        "status": 1
+    },
+    {
+        "quadrant": 0,
+        "ring": 1,
         "label": "ArgoCD",
         "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-for-enterprises",
         "status": 2
@@ -704,6 +746,13 @@
         "ring": 3,
         "label": "DFS",
         "link": "https://en.wikipedia.org/wiki/Distributed_File_System_(Microsoft)",
+        "status": 0
+    },
+    {
+        "quadrant": 0,
+        "ring": 3,
+        "label": "Microsoft Identity Manager (MIM)",
+        "link": "https://learn.microsoft.com/en-us/microsoft-identity-manager/",
         "status": 0
     },
     {
