@@ -443,6 +443,13 @@
     {
         "quadrant": 0,
         "ring": 1,
+        "label": "Darktrace",
+        "link": "https://www.darktrace.com/",
+        "status": 0
+    },    
+    {
+        "quadrant": 0,
+        "ring": 1,
         "label": "GitHub Enterprise",
         "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-for-enterprises",
         "status": 0
@@ -459,6 +466,13 @@
         "ring": 1,
         "label": "Leafcloud",
         "link": "https://leaf.cloud/",
+        "status": 1
+    },
+    {
+        "quadrant": 0,
+        "ring": 1,
+        "label": "RabbitMQ",
+        "link": "https://www.rabbitmq.com/",
         "status": 1
     },
     {
@@ -508,6 +522,13 @@
         "ring": 1,
         "label": "Ubiquitous Language",
         "link": "https://deviq.com/domain-driven-design/ubiquitous-language",
+        "status": 0
+    },
+    {
+        "quadrant": 3,
+        "ring": 1,
+        "label": "Podman",
+        "link": "https://podman.io/",
         "status": 0
     },
     {
