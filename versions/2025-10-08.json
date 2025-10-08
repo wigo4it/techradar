@@ -464,6 +464,13 @@
     {
         "quadrant": 0,
         "ring": 1,
+        "label": "RabbitMQ",
+        "link": "https://www.rabbitmq.com/",
+        "status": 1
+    },
+    {
+        "quadrant": 0,
+        "ring": 1,
         "label": "Talos",
         "link": "https://www.talos.dev/",
         "status": 1
@@ -508,6 +515,13 @@
         "ring": 1,
         "label": "Ubiquitous Language",
         "link": "https://deviq.com/domain-driven-design/ubiquitous-language",
+        "status": 0
+    },
+    {
+        "quadrant": 3,
+        "ring": 1,
+        "label": "Podman",
+        "link": "https://podman.io/",
         "status": 0
     },
     {
