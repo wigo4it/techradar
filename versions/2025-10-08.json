@@ -443,6 +443,13 @@
     {
         "quadrant": 0,
         "ring": 1,
+        "label": "Darktrace",
+        "link": "https://www.darktrace.com/",
+        "status": 0
+    },    
+    {
+        "quadrant": 0,
+        "ring": 1,
         "label": "GitHub Enterprise",
         "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-for-enterprises",
         "status": 0
