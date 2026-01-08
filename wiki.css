@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    background-color: #212e63;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+}
+
+/* Language selector styles */
+.language-selector {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.language-selector select {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-family: 'Raleway';
+    font-size: 14px;
+}
+
+.language-selector select option {
+    background-color: #212e63;
+    color: white;
+}
+
+#wiki-container {
+    padding: 10px;
+    color: white;
+    background-color: #212e63;
+    margin: 0 auto;
+    /* Center the container */
+    margin-top: 60px;
+    /* Add space for language selector */
+}
+
+/* Media query for screens wider than 768px */
+@media (min-width: 1500px) {
+    #wiki-container {
+        width: 50%;
+        /* Set the width to 50% for normal screens */
+    }
+}
+
+#wiki-container a {
+    color: white;
+}
+
+#wiki-container a:hover {
+    color: #ba4fab;
+}
+
+#wiki-container h1 {
+    color: white;
+}
+
+#wiki-container h2,
+#wiki-container h3,
+#wiki-container h4,
+#wiki-container h5,
+#wiki-container h6 {
+    color: #66d18f;
+}
+
+#wiki-container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#wiki-container th, #wiki-container td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+}
+
+#wiki-container th:first-child, #wiki-container td:first-child {
+    width: 40%;
+}
+
+#wiki-container th:nth-child(2), #wiki-container td:nth-child(2) {
+    width: 60%;
+}
+
+#wiki-container th {
+    background-color: rgba(255, 255, 255, 0.1);
+}

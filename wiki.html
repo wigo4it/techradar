@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Wigo4it Duurzaamheidsradar: De radar voor duurzaam bewustzijn.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+
+    <title>Wigo4it Tech</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="wiki.css">
+
+</head>
+
+<body>
+
+    <div id="wiki-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const params = new URLSearchParams(window.location.search);
+            const wikiKey = params.get('page');
+
+            if (wikiKey) {
+                const wikiPath = `wiki/${wikiKey}.md`;
+
+                fetch(wikiPath)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(markdown => {
+                        // Extract the first line of the markdown file
+                        const firstLine = markdown.split('\n')[0];
+                        // Remove '#' and the space, then set as the document's title
+                        const pageTitle = firstLine.replace('# ', '');
+                        document.title = "Tech Radar - " + pageTitle;
+
+                        // Parse the markdown to HTML and display it
+                        const htmlContent = marked.parse(markdown);
+                        document.getElementById('wiki-container').innerHTML = htmlContent;
+                    })
+                    .catch(error => {
+                        console.error('Error fetching the markdown file:', error);
+                        document.getElementById('wiki-container').innerHTML = 'Wiki-item niet gevonden.';
+                    });
+            } else {
+                document.getElementById('wiki-container').innerHTML = 'Geen wiki-item opgegeven.';
+            }
+        });
+    </script>
+</body>
+
+</html>

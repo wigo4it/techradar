@@ -1,0 +1,10 @@
+AFAS
+Ansible
+Chocolatey
+Freshservice
+Microsoft 365
+OpenID Connect
+Packer
+Power Automate
+Power BI
+Toad for Oracle

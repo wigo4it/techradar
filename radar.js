@@ -13,33 +13,37 @@
 // all copies or substantial portions of the Software.
 
 function radar_visualization(config) {
-
   const style = getComputedStyle(document.documentElement);
 
   config.svg_id = "radar";
   config.width = 1450;
   config.height = 900;
   config.colors = {
-    background: style.getPropertyValue('--kleur-achtergrond'),
-    text: style.getPropertyValue('--kleur-tekst'),
-    grid: '#dddde0',
+    background: style.getPropertyValue("--kleur-achtergrond"),
+    text: style.getPropertyValue("--kleur-tekst"),
+    grid: "#dddde0",
     inactive: "#ddd",
-    gebruik: style.getPropertyValue('--kleur-gebruik'),
-    probeer: style.getPropertyValue('--kleur-probeer'),
-    onderzoek: style.getPropertyValue('--kleur-onderzoek'),
-    verminder: style.getPropertyValue('--kleur-verminder')
+    gebruik: style.getPropertyValue("--kleur-gebruik"),
+    probeer: style.getPropertyValue("--kleur-probeer"),
+    onderzoek: style.getPropertyValue("--kleur-onderzoek"),
+    verminder: style.getPropertyValue("--kleur-verminder"),
   };
   config.quadrants = [
-    { name: "Infrastructuur & Platformen" }, //rechtsonder
-    { name: "Talen & Frameworks" }, //linksonder
-    { name: "Architectuur & Cultuur" }, //linksboven
-    { name: "Ondersteuning & Tools" }, //rechtsboven
+    {
+      name: "Platform & Cloud Services",
+      subtitle: "Waarmee we het platform bouwen"}, //rechtsonder
+    { name: "Talen, Frameworks & Tools",
+      subtitle: "Waarmee we onze software realiseren"}, //linksonder
+    { name: "Fundamentele Ontwerpkeuzes",
+      subtitle: "Welke keuzes alignment brengen"}, //linksboven
+    { name: "Engineering Practices",
+      subtitle: "Hoe we kwaliteit borgen"}, //rechtsboven
   ];
   config.rings = [
     { name: "Gebruik", color: config.colors.gebruik, textColor: "white" },
     { name: "Probeer", color: config.colors.probeer, textColor: "black" },
     { name: "Onderzoek", color: config.colors.onderzoek, textColor: "white" },
-    { name: "Verminder", color: config.colors.verminder, textColor: "white" }
+    { name: "Verminder", color: config.colors.verminder, textColor: "white" },
   ];
   config.print_layout = true;
   config.links_in_new_tabs = true;
@@ -65,27 +69,25 @@ function radar_visualization(config) {
     { radial_min: 0, radial_max: 0.5, factor_x: 1, factor_y: 1 }, //rechtsboven
     { radial_min: 0.5, radial_max: 1, factor_x: -1, factor_y: 1 }, //linksboven
     { radial_min: -1, radial_max: -0.5, factor_x: -1, factor_y: -1 }, //linksonder
-    { radial_min: -0.5, radial_max: 0, factor_x: 1, factor_y: -1 } // rechtsonder
+    { radial_min: -0.5, radial_max: 0, factor_x: 1, factor_y: -1 }, // rechtsonder
   ];
 
   const rings = [
     { radius: 130 },
     { radius: 220 },
     { radius: 310 },
-    { radius: 400 }
+    { radius: 400 },
   ];
 
-  const title_offset =
-    { x: -675, y: -440 };
+  const title_offset = { x: -675, y: -440 };
 
-  const footer_offset =
-    { x: -675, y: 420 };
+  const footer_offset = { x: -675, y: 420 };
 
   const legend_offset = [
     { x: 450, y: 90 }, //rechsonder
     { x: -675, y: 90 }, //linksonder
     { x: -675, y: -310 }, //linksboven
-    { x: 450, y: -310 } //rechtsboven
+    { x: 450, y: -310 }, //rechtsboven
   ];
 
   function polar(cartesian) {
@@ -93,15 +95,15 @@ function radar_visualization(config) {
     var y = cartesian.y;
     return {
       t: Math.atan2(y, x),
-      r: Math.sqrt(x * x + y * y)
-    }
+      r: Math.sqrt(x * x + y * y),
+    };
   }
 
   function cartesian(polar) {
     return {
       x: polar.r * Math.cos(polar.t),
-      y: polar.r * Math.sin(polar.t)
-    }
+      y: polar.r * Math.sin(polar.t),
+    };
   }
 
   function bounded_interval(value, min, max) {
@@ -113,33 +115,33 @@ function radar_visualization(config) {
   function bounded_ring(polar, r_min, r_max) {
     return {
       t: polar.t,
-      r: bounded_interval(polar.r, r_min, r_max)
-    }
+      r: bounded_interval(polar.r, r_min, r_max),
+    };
   }
 
   function bounded_box(point, min, max) {
     return {
       x: bounded_interval(point.x, min.x, max.x),
-      y: bounded_interval(point.y, min.y, max.y)
-    }
+      y: bounded_interval(point.y, min.y, max.y),
+    };
   }
 
   function segment(quadrant, ring) {
     var polar_min = {
       t: quadrants[quadrant].radial_min * Math.PI,
-      r: ring === 0 ? 30 : rings[ring - 1].radius
+      r: ring === 0 ? 30 : rings[ring - 1].radius,
     };
     var polar_max = {
       t: quadrants[quadrant].radial_max * Math.PI,
-      r: rings[ring].radius
+      r: rings[ring].radius,
     };
     var cartesian_min = {
       x: 15 * quadrants[quadrant].factor_x,
-      y: 15 * quadrants[quadrant].factor_y
+      y: 15 * quadrants[quadrant].factor_y,
     };
     var cartesian_max = {
       x: rings[3].radius * quadrants[quadrant].factor_x,
-      y: rings[3].radius * quadrants[quadrant].factor_y
+      y: rings[3].radius * quadrants[quadrant].factor_y,
     };
     return {
       clipx: function (d) {
@@ -157,10 +159,10 @@ function radar_visualization(config) {
       random: function () {
         return cartesian({
           t: random_between(polar_min.t, polar_max.t),
-          r: normal_between(polar_min.r, polar_max.r)
+          r: normal_between(polar_min.r, polar_max.r),
         });
-      }
-    }
+      },
+    };
   }
 
   // position each entry randomly in its segment
@@ -170,8 +172,10 @@ function radar_visualization(config) {
     var point = entry.segment.random();
     entry.x = point.x;
     entry.y = point.y;
-    entry.color = entry.active || config.print_layout ?
-      config.rings[entry.ring].color : config.colors.inactive;
+    entry.color =
+      entry.active || config.print_layout
+        ? config.rings[entry.ring].color
+        : config.colors.inactive;
     entry.textColor = config.rings[entry.ring].textColor;
   }
 
@@ -203,8 +207,8 @@ function radar_visualization(config) {
     return "translate(" + x + "," + y + ")";
   }
 
-
-  var svg = d3.select("svg#" + config.svg_id)
+  var svg = d3
+    .select("svg#" + config.svg_id)
     .style("background-color", config.colors.background)
     .attr("width", config.width)
     .attr("height", config.height);
@@ -215,34 +219,40 @@ function radar_visualization(config) {
   var grid = radar.append("g");
 
   // draw grid lines
-  grid.append("line")
-    .attr("x1", 0).attr("y1", -400)
-    .attr("x2", 0).attr("y2", 400)
+  grid
+    .append("line")
+    .attr("x1", 0)
+    .attr("y1", -400)
+    .attr("x2", 0)
+    .attr("y2", 400)
     .style("stroke", config.colors.grid)
     .style("stroke-width", 2);
-  grid.append("line")
-    .attr("x1", -400).attr("y1", 0)
-    .attr("x2", 400).attr("y2", 0)
+  grid
+    .append("line")
+    .attr("x1", -400)
+    .attr("y1", 0)
+    .attr("x2", 400)
+    .attr("y2", 0)
     .style("stroke", config.colors.grid)
     .style("stroke-width", 2);
 
   // background color. Usage `.attr("filter", "url(#solid)")`
   // SOURCE: https://stackoverflow.com/a/31013492/2609980
   var defs = grid.append("defs");
-  var filter = defs.append("filter")
+  var filter = defs
+    .append("filter")
     .attr("x", 0)
     .attr("y", 0)
     .attr("width", 1)
     .attr("height", 1)
     .attr("id", "solid");
-  filter.append("feFlood")
-    .attr("flood-color", config.colors.text);
-  filter.append("feComposite")
-    .attr("in", "SourceGraphic");
+  filter.append("feFlood").attr("flood-color", config.colors.text);
+  filter.append("feComposite").attr("in", "SourceGraphic");
 
   // draw rings
   for (var i = 0; i < rings.length; i++) {
-    grid.append("circle")
+    grid
+      .append("circle")
       .attr("cx", 0)
       .attr("cy", 0)
       .attr("r", rings[i].radius)
@@ -250,7 +260,8 @@ function radar_visualization(config) {
       .style("stroke", config.colors.grid)
       .style("stroke-width", 2);
     if (config.print_layout) {
-      grid.append("text")
+      grid
+        .append("text")
         .text(config.rings[i].name)
         .attr("y", -rings[i].radius + 32)
         .attr("text-anchor", "middle")
@@ -267,7 +278,7 @@ function radar_visualization(config) {
 
   function legend_transform(quadrant, ring, index = null) {
     var dx = ring < 2 ? 0 : 150; // ruimte tussen de legenda's
-    var dy = (index == null ? -16 : index * 12);
+    var dy = index == null ? -16 : index * 12;
     if (ring % 2 === 1) {
       dy = dy + 36 + segmented[quadrant][ring - 1].length * 12;
     }
@@ -279,7 +290,6 @@ function radar_visualization(config) {
 
   // draw title and legend (only in print layout)
   if (config.print_layout) {
-
     // title
     radar
       .append("text")
@@ -287,10 +297,11 @@ function radar_visualization(config) {
       .text(config.title || "")
       .style("font-family", "Raleway")
       .style("font-size", "14")
-      .style("fill", config.colors.text)
+      .style("fill", config.colors.text);
 
     // footer
-    radar.append("text")
+    radar
+      .append("text")
       .attr("transform", translate(footer_offset.x, footer_offset.y))
       .text("■ nieuw ▲ verplaatst")
       .attr("xml:space", "preserve")
@@ -301,25 +312,41 @@ function radar_visualization(config) {
     // legend
     var legend = radar.append("g");
     for (var quadrant = 0; quadrant < 4; quadrant++) {
-      legend.append("text")
-        .attr("transform", translate(
-          legend_offset[quadrant].x,
-          legend_offset[quadrant].y - 45
-        ))
+      legend
+        .append("text")
+        .attr(
+          "transform",
+          translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 65)
+        )
         .text(config.quadrants[quadrant].name)
         .style("font-family", "Raleway")
         .style("font-size", "20px")
         .style("font-weight", "900")
         .style("fill", config.colors.text);
+      legend
+        .append("text")
+        .attr(
+          "transform",
+          translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 45)
+        )
+        .text(config.quadrants[quadrant].subtitle || "")
+        .style("font-family", "Raleway")
+        .style("font-size", "12px")
+        .style("font-weight", "500")
+        .style("fill", config.colors.text)
+        .style("opacity", 0.85);
+
       for (var ring = 0; ring < 4; ring++) {
-        legend.append("text")
+        legend
+          .append("text")
           .attr("transform", legend_transform(quadrant, ring))
           .text(config.rings[ring].name)
           .style("font-family", "Raleway")
           .style("font-size", "12px")
           .style("font-weight", "bold")
           .style("fill", config.rings[ring].color);
-        legend.selectAll(".legend" + quadrant + ring)
+        legend
+          .selectAll(".legend" + quadrant + ring)
           .data(segmented[quadrant][ring])
           .enter()
           .append("a")
@@ -328,11 +355,11 @@ function radar_visualization(config) {
           })
           // Add a target if (and only if) there is a link and we want new tabs
           .attr("target", function (d, i) {
-            return (d.link && config.links_in_new_tabs) ? "_blank" : null;
+            return d.link && config.links_in_new_tabs ? "_blank" : null;
           })
           // add application insights link clicked event
           .attr("data-custom-id", function (d, i) {
-            return d.label.replace(/\s+/g, '');
+            return d.label.replace(/\s+/g, "");
           })
           .attr("data-custom-name", function (d, i) {
             return d.label;
@@ -341,47 +368,61 @@ function radar_visualization(config) {
             return "NAVIGATION";
           })
           .append("text")
-          .attr("transform", function (d, i) { return legend_transform(quadrant, ring, i); })
+          .attr("transform", function (d, i) {
+            return legend_transform(quadrant, ring, i);
+          })
           .attr("class", "legend" + quadrant + ring)
-          .attr("id", function (d, i) { return "legendItem" + d.id; })
-          .text(function (d, i) { return d.id + ". " + d.label; })
+          .attr("id", function (d, i) {
+            return "legendItem" + d.id;
+          })
+          .text(function (d, i) {
+            return d.id + ". " + d.label;
+          })
           .style("font-family", "Raleway")
           .style("font-size", "11px")
           .attr("fill", config.colors.text)
-          .on("mouseover", function (d) { showBubble(d); highlightLegendItem(d); })
-          .on("mouseout", function (d) { hideBubble(d); unhighlightLegendItem(d); });
+          .on("mouseover", function (d) {
+            showBubble(d);
+            highlightLegendItem(d);
+          })
+          .on("mouseout", function (d) {
+            hideBubble(d);
+            unhighlightLegendItem(d);
+          });
       }
     }
   }
 
   // layer for entries
-  var rink = radar.append("g")
-    .attr("id", "rink");
+  var rink = radar.append("g").attr("id", "rink");
 
   // rollover bubble (on top of everything else)
-  var bubble = radar.append("g")
+  var bubble = radar
+    .append("g")
     .attr("id", "bubble")
     .attr("x", 0)
     .attr("y", 0)
     .style("opacity", 0)
     .style("pointer-events", "none")
     .style("user-select", "none");
-  bubble.append("rect")
+  bubble
+    .append("rect")
     .attr("rx", 4)
     .attr("ry", 4)
     .style("fill", config.colors.text);
-  bubble.append("text")
+  bubble
+    .append("text")
     .style("font-family", "Raleway")
     .style("font-size", "10px")
     .style("fill", config.colors.background);
-  bubble.append("path")
+  bubble
+    .append("path")
     .attr("d", "M 0,0 10,0 5,8 z")
     .style("fill", config.colors.text);
 
   function showBubble(d) {
     if (d.active || config.print_layout) {
-      var tooltip = d3.select("#bubble text")
-        .text(d.label); //hoover text
+      var tooltip = d3.select("#bubble text").text(d.label); //hoover text
       var bbox = tooltip.node().getBBox();
       d3.select("#bubble")
         .attr("transform", translate(d.x - bbox.width / 2, d.y - 16))
@@ -391,13 +432,16 @@ function radar_visualization(config) {
         .attr("y", -bbox.height)
         .attr("width", bbox.width + 10)
         .attr("height", bbox.height + 4);
-      d3.select("#bubble path")
-        .attr("transform", translate(bbox.width / 2 - 5, 3));
+      d3.select("#bubble path").attr(
+        "transform",
+        translate(bbox.width / 2 - 5, 3)
+      );
     }
   }
 
   function hideBubble(d) {
-    var bubble = d3.select("#bubble")
+    var bubble = d3
+      .select("#bubble")
       .attr("transform", translate(0, 0))
       .style("opacity", 0);
   }
@@ -415,14 +459,23 @@ function radar_visualization(config) {
   }
 
   // draw blips on radar
-  var blips = rink.selectAll(".blip")
+  var blips = rink
+    .selectAll(".blip")
     .data(config.entries)
     .enter()
     .append("g")
     .attr("class", "blip")
-    .attr("transform", function (d, i) { return legend_transform(d.quadrant, d.ring, i); })
-    .on("mouseover", function (d) { showBubble(d); highlightLegendItem(d); })
-    .on("mouseout", function (d) { hideBubble(d); unhighlightLegendItem(d); });
+    .attr("transform", function (d, i) {
+      return legend_transform(d.quadrant, d.ring, i);
+    })
+    .on("mouseover", function (d) {
+      showBubble(d);
+      highlightLegendItem(d);
+    })
+    .on("mouseout", function (d) {
+      hideBubble(d);
+      unhighlightLegendItem(d);
+    });
 
   // configure each blip
   blips.each(function (d) {
@@ -430,8 +483,15 @@ function radar_visualization(config) {
 
     // blip link
     if (d.active && d.hasOwnProperty("link") && d.link) {
+      // Add current language to wiki links
+      let linkUrl = d.link;
+      if (linkUrl.includes('wiki.html') && window.currentLanguage) {
+        const separator = linkUrl.includes('?') ? '&' : '?';
+        linkUrl += separator + 'lang=' + window.currentLanguage;
+      }
+
       blip = blip.append("a")
-        .attr("xlink:href", d.link);
+        .attr("xlink:href", linkUrl);
 
       if (config.links_in_new_tabs) {
         blip.attr("target", "_blank");
@@ -440,31 +500,34 @@ function radar_visualization(config) {
 
     // blip shape
     if (d.status == 1) {
-      blip.append("rect") //nieuw (vierkant)
-        .attr("x", -7)       // x-coordinate of the top-left corner
-        .attr("y", -6)       // y-coordinate of the top-left corner
+      blip
+        .append("rect") //nieuw (vierkant)
+        .attr("x", -7) // x-coordinate of the top-left corner
+        .attr("y", -6) // y-coordinate of the top-left corner
         .attr("width", 15)
         .attr("height", 15)
         .attr("fill", d.color);
     } else if (d.status == 2) {
-      blip.append("path")
+      blip
+        .append("path")
         .attr("d", "M -11,5 11,5 0,-13 z") // verplaatst (driehoek)
         .style("fill", d.color);
     } else {
-      blip.append("circle")
-        .attr("r", 9)
-        .attr("fill", d.color);
+      blip.append("circle").attr("r", 9).attr("fill", d.color);
     }
     // blip text
     if (d.active || config.print_layout) {
       var blip_text = config.print_layout ? d.id : d.label.match(/[a-z]/i);
-      blip.append("text")
+      blip
+        .append("text")
         .text(blip_text)
         .attr("y", 3)
         .attr("text-anchor", "middle")
         .style("fill", d.textColor)
         .style("font-family", "Raleway")
-        .style("font-size", function (d) { return blip_text.length > 2 ? "8px" : "9px"; })
+        .style("font-size", function (d) {
+          return blip_text.length > 2 ? "8px" : "9px";
+        })
         .style("pointer-events", "none")
         .style("user-select", "none");
     }
@@ -474,7 +537,7 @@ function radar_visualization(config) {
   function ticked() {
     blips.attr("transform", function (d) {
       return translate(d.segment.clipx(d), d.segment.clipy(d));
-    })
+    });
   }
 
   // distribute blips, while avoiding collisions
