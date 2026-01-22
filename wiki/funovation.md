@@ -1,7 +1,3 @@
-Hier is een aangepaste versie waarin de feedback is verwerkt, zonder de kern en toon te verliezen.
-
----
-
 # Funovation Day
 
 ## Waarom Funovation
