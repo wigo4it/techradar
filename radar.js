@@ -17,7 +17,7 @@ function radar_visualization(config) {
 
   config.svg_id = "radar";
   config.width = 1450;
-  config.height = 900;
+  config.height = 1000;
   config.colors = {
     background: style.getPropertyValue("--kleur-achtergrond"),
     text: style.getPropertyValue("--kleur-tekst"),
@@ -31,13 +31,17 @@ function radar_visualization(config) {
   config.quadrants = [
     {
       name: "Platform & Cloud Services",
-      subtitle: "Waarmee we het platform bouwen"}, //rechtsonder
-    { name: "Talen, Frameworks & Tools",
-      subtitle: "Waarmee we onze software realiseren"}, //linksonder
-    { name: "Fundamentele Ontwerpkeuzes",
-      subtitle: "Welke keuzes alignment brengen"}, //linksboven
-    { name: "Engineering Practices",
-      subtitle: "Hoe we kwaliteit borgen"}, //rechtsboven
+      subtitle: "Waarmee we het platform bouwen",
+    }, //rechtsonder
+    {
+      name: "Talen, Frameworks & Tools",
+      subtitle: "Waarmee we onze software realiseren",
+    }, //linksonder
+    {
+      name: "Fundamentele Ontwerpkeuzes",
+      subtitle: "Welke keuzes alignment brengen",
+    }, //linksboven
+    { name: "Engineering Practices", subtitle: "Hoe we kwaliteit borgen" }, //rechtsboven
   ];
   config.rings = [
     { name: "Gebruik", color: config.colors.gebruik, textColor: "white" },
@@ -284,7 +288,7 @@ function radar_visualization(config) {
     }
     return translate(
       legend_offset[quadrant].x + dx,
-      legend_offset[quadrant].y + dy
+      legend_offset[quadrant].y + dy,
     );
   }
 
@@ -316,7 +320,7 @@ function radar_visualization(config) {
         .append("text")
         .attr(
           "transform",
-          translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 65)
+          translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 65),
         )
         .text(config.quadrants[quadrant].name)
         .style("font-family", "Raleway")
@@ -327,7 +331,7 @@ function radar_visualization(config) {
         .append("text")
         .attr(
           "transform",
-          translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 45)
+          translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 45),
         )
         .text(config.quadrants[quadrant].subtitle || "")
         .style("font-family", "Raleway")
@@ -434,7 +438,7 @@ function radar_visualization(config) {
         .attr("height", bbox.height + 4);
       d3.select("#bubble path").attr(
         "transform",
-        translate(bbox.width / 2 - 5, 3)
+        translate(bbox.width / 2 - 5, 3),
       );
     }
   }
@@ -485,13 +489,12 @@ function radar_visualization(config) {
     if (d.active && d.hasOwnProperty("link") && d.link) {
       // Add current language to wiki links
       let linkUrl = d.link;
-      if (linkUrl.includes('wiki.html') && window.currentLanguage) {
-        const separator = linkUrl.includes('?') ? '&' : '?';
-        linkUrl += separator + 'lang=' + window.currentLanguage;
+      if (linkUrl.includes("wiki.html") && window.currentLanguage) {
+        const separator = linkUrl.includes("?") ? "&" : "?";
+        linkUrl += separator + "lang=" + window.currentLanguage;
       }
 
-      blip = blip.append("a")
-        .attr("xlink:href", linkUrl);
+      blip = blip.append("a").attr("xlink:href", linkUrl);
 
       if (config.links_in_new_tabs) {
         blip.attr("target", "_blank");
