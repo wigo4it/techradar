@@ -79,8 +79,22 @@
   {
     "quadrant": 0,
     "ring": 0,
+    "label": "CoreDNS",
+    "link": "https://coredns.io/",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 0,
     "label": "Grafana",
     "link": "https://grafana.com/",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 0,
+    "label": "Kubernetes Services",
+    "link": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes",
     "status": 0
   },
   {
@@ -95,13 +109,6 @@
     "ring": 0,
     "label": "Log Analytics Worksp.",
     "link": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
-    "status": 0
-  },
-  {
-    "quadrant": 0,
-    "ring": 0,
-    "label": "Kubernetes Services",
-    "link": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes",
     "status": 0
   },
   {
@@ -170,13 +177,6 @@
   {
     "quadrant": 0,
     "ring": 1,
-    "label": "CoreDNS",
-    "link": "https://coredns.io/",
-    "status": 2
-  },
-  {
-    "quadrant": 0,
-    "ring": 1,
     "label": "Azure Comm. Services",
     "link": "https://azure.microsoft.com/en-us/products/communication-services",
     "status": 0
@@ -184,15 +184,15 @@
   {
     "quadrant": 0,
     "ring": 1,
-    "label": "Darktrace",
-    "link": "https://www.darktrace.com/",
+    "label": "GitHub Enterprise",
+    "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-for-enterprises",
     "status": 0
   },
   {
     "quadrant": 0,
     "ring": 1,
-    "label": "GitHub Enterprise",
-    "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-for-enterprises",
+    "label": "Keda",
+    "link": "https://keda.sh/",
     "status": 0
   },
   {
@@ -212,6 +212,20 @@
   {
     "quadrant": 0,
     "ring": 1,
+    "label": "RabbitMQ",
+    "link": "https://www.rabbitmq.com/",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 1,
+    "label": "Redis",
+    "link": "https://redis.io/",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 1,
     "label": "Talos",
     "link": "https://www.talos.dev/",
     "status": 0
@@ -226,15 +240,15 @@
   {
     "quadrant": 0,
     "ring": 2,
-    "label": "HAVEN+",
-    "link": "https://gitlab.com/commonground/haven/havenplus",
+    "label": "Entra External ID",
+    "link": "https://www.microsoft.com/security/business/identity-access/microsoft-entra-external-id",
     "status": 0
   },
   {
     "quadrant": 0,
     "ring": 2,
-    "label": "Entra External ID",
-    "link": "https://www.microsoft.com/security/business/identity-access/microsoft-entra-external-id",
+    "label": "HAVEN+",
+    "link": "https://gitlab.com/commonground/haven/havenplus",
     "status": 0
   },
   {
@@ -263,13 +277,6 @@
     "ring": 3,
     "label": "AVS",
     "link": "wiki.html?page=avs",
-    "status": 0
-  },
-  {
-    "quadrant": 0,
-    "ring": 3,
-    "label": "Infoblox",
-    "link": "https://www.infoblox.com/",
     "status": 0
   },
   {
@@ -312,6 +319,13 @@
     "ring": 3,
     "label": "Fully in control",
     "link": "https://fullyincontrol.com/",
+    "status": 0
+  },
+  {
+    "quadrant": 0,
+    "ring": 3,
+    "label": "Infoblox",
+    "link": "https://www.infoblox.com/",
     "status": 0
   },
   {
@@ -408,15 +422,15 @@
   {
     "quadrant": 1,
     "ring": 0,
-    "label": "NServiceBus",
-    "link": "https://particular.net/nservicebus",
+    "label": "Miro",
+    "link": "https://miro.com/",
     "status": 0
   },
   {
     "quadrant": 1,
     "ring": 0,
-    "label": "Miro",
-    "link": "https://miro.com/",
+    "label": "NServiceBus",
+    "link": "https://particular.net/nservicebus",
     "status": 0
   },
   {
@@ -499,16 +513,16 @@
   {
     "quadrant": 1,
     "ring": 3,
-    "label": ".NET 9",
+    "label": ".NET 8",
     "link": "https://en.wikipedia.org/wiki/.NET",
-    "status": 2
+    "status": 0
   },
   {
     "quadrant": 1,
     "ring": 3,
-    "label": ".NET 8",
+    "label": ".NET 9",
     "link": "https://en.wikipedia.org/wiki/.NET",
-    "status": 0
+    "status": 2
   },
   {
     "quadrant": 1,
@@ -604,15 +618,15 @@
   {
     "quadrant": 2,
     "ring": 0,
-    "label": "Cloud Native & Agnostic",
-    "link": "https://github.com/cncf/toc/blob/main/DEFINITION.md",
+    "label": "CNCF projects",
+    "link": "https://landscape.cncf.io",
     "status": 1
   },
   {
     "quadrant": 2,
     "ring": 0,
-    "label": "CNCF projects",
-    "link": "https://landscape.cncf.io",
+    "label": "Cloud Native & Agnostic",
+    "link": "https://github.com/cncf/toc/blob/main/DEFINITION.md",
     "status": 1
   },
   {
@@ -639,15 +653,15 @@
   {
     "quadrant": 2,
     "ring": 1,
-    "label": "Ubiquitous Language",
-    "link": "https://deviq.com/domain-driven-design/ubiquitous-language",
+    "label": "Observability",
+    "link": "https://tinycode2.medium.com/do-you-know-your-unknown-unknowns-5ae5e01daa87",
     "status": 0
   },
   {
     "quadrant": 2,
     "ring": 1,
-    "label": "Observability",
-    "link": "https://tinycode2.medium.com/do-you-know-your-unknown-unknowns-5ae5e01daa87",
+    "label": "Ubiquitous Language",
+    "link": "https://deviq.com/domain-driven-design/ubiquitous-language",
     "status": 0
   },
   {
@@ -695,15 +709,15 @@
   {
     "quadrant": 3,
     "ring": 0,
-    "label": "Continuous Integration",
-    "link": "https://en.wikipedia.org/wiki/Continuous_integration",
+    "label": "Continuous Delivery",
+    "link": "https://en.wikipedia.org/wiki/Continuous_delivery",
     "status": 0
   },
   {
     "quadrant": 3,
     "ring": 0,
-    "label": "Continuous Delivery",
-    "link": "https://en.wikipedia.org/wiki/Continuous_delivery",
+    "label": "Continuous Integration",
+    "link": "https://en.wikipedia.org/wiki/Continuous_integration",
     "status": 0
   },
   {
@@ -730,13 +744,6 @@
   {
     "quadrant": 3,
     "ring": 0,
-    "label": "SSD",
-    "link": "https://en.wikipedia.org/wiki/Software_development_security",
-    "status": 0
-  },
-  {
-    "quadrant": 3,
-    "ring": 0,
     "label": "Security-Chapter",
     "link": "wiki.html?page=securitychapter",
     "status": 1
@@ -744,9 +751,9 @@
   {
     "quadrant": 3,
     "ring": 0,
-    "label": "Tech-Chapter",
-    "link": "wiki.html?page=techchapter",
-    "status": 1
+    "label": "SSD",
+    "link": "https://en.wikipedia.org/wiki/Software_development_security",
+    "status": 0
   },
   {
     "quadrant": 3,
@@ -754,6 +761,13 @@
     "label": "T-shaped Engineers",
     "link": "https://en.wikipedia.org/wiki/T-shaped_skills",
     "status": 0
+  },
+  {
+    "quadrant": 3,
+    "ring": 0,
+    "label": "Tech-Chapter",
+    "link": "wiki.html?page=techchapter",
+    "status": 1
   },
   {
     "quadrant": 3,
@@ -779,14 +793,14 @@
   {
     "quadrant": 3,
     "ring": 2,
-    "label": "Green Computing",
+    "label": "Green Coding",
     "link": "https://en.wikipedia.org/wiki/Green_computing",
     "status": 0
   },
   {
     "quadrant": 3,
     "ring": 2,
-    "label": "Green Coding",
+    "label": "Green Computing",
     "link": "https://en.wikipedia.org/wiki/Green_computing",
     "status": 0
   }
