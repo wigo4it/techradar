@@ -1,44 +1,77 @@
 <html>
-  <head>
-    <title>Wigo4it Tech Radar | Changelog</title>
 
-    <link rel="stylesheet" href="radar.css">
-    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-  </head>
+<head>
+  <title>Wigo4it Tech Radar | Changelog</title>
 
-  <body>
-    <div class="center-box">
-      <img src="wigo4it-logo.svg" alt="Wigo4it logo">
-      <h1>Tech Radar</h1>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" href="radar.css">
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+
+  <script src="timeline.js"></script>
+</head>
+
+<body>
+  <div class="center-box">
+    <img src="wigo4it-logo.svg" alt="Wigo4it logo">
+    <h1>Tech Radar</h1>
+  </div>
+
+  <div class="center-box">
+    <div id="changelog" class="column">
+      <h2>Changelog</h2>
     </div>
+</body>
 
-    <div class="center-box">
-      <div id="changelog" class="column">
-        <h2>Changelog</h2>
-      </div>
-  </body>
+<script>
+  const changelog = document.getElementById('changelog');
 
-  <script>
-    const changelog = document.getElementById('changelog');
+  fetch("/data/radar.json")
+    .then(response => response.json())
+    .then(data => {
+      const moments = deriveChangelog(data); // nieuwste eerst
 
-    fetch("/versions/versions.json")
-        .then(response => response.json())
-        .then(data => {
-          data.sort((a, b) => a.version < b.version ? 1 : -1);
+      moments.forEach((moment, index) => {
+        const h = document.createElement('h3');
+        const a = document.createElement('a');
+        // Nieuwste moment linkt naar de startpagina, rest naar de peildatum.
+        a.setAttribute('href', index === 0 ? '/' : `/?date=${moment.date}`);
+        a.append(document.createTextNode(moment.label));
+        h.appendChild(a);
+        changelog.appendChild(h);
 
-          for (d of data) {
-            const h = document.createElement('h3');
-            const a = document.createElement('a');
-            a.setAttribute('href', d.version === data[0].version ? '/' :  `/?version=${d.version}`);
-            a.append(document.createTextNode(d.title));
-            h.appendChild(a);
+        if (moment.added.length) {
+          changelog.appendChild(makeGroup('Nieuw', moment.added));
+        }
+        if (moment.moved.length) {
+          const items = moment.moved.map(
+            m => `${m.label}: ${ringLabel(m.from)} → ${ringLabel(m.to)}`
+          );
+          changelog.appendChild(makeGroup('Verplaatst', items));
+        }
+        if (moment.removed.length) {
+          changelog.appendChild(makeGroup('Verwijderd', moment.removed));
+        }
+      });
+    });
 
-            const p = document.createElement('p');
-            p.append(document.createTextNode(d.description));
+  function makeGroup(title, items) {
+    const wrapper = document.createElement('div');
+    const strong = document.createElement('p');
+    strong.style.marginBottom = '2px';
+    strong.appendChild(document.createElement('strong'))
+      .appendChild(document.createTextNode(title));
+    wrapper.appendChild(strong);
 
-            changelog.appendChild(h);
-            changelog.appendChild(p);
-          }
-        });
-  </script>
+    const ul = document.createElement('ul');
+    ul.style.marginTop = '0';
+    for (const item of items) {
+      const li = document.createElement('li');
+      li.append(document.createTextNode(item));
+      ul.appendChild(li);
+    }
+    wrapper.appendChild(ul);
+    return wrapper;
+  }
+</script>
+
 </html>

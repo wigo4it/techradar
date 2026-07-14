@@ -1,0 +1,2571 @@
+[
+  {
+    "label": "ACR",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-01-14",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Active Directory",
+    "quadrant": "platform",
+    "link": "https://en.wikipedia.org/wiki/Active_Directory",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "AKS",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-01-14",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Application Insights",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net",
+    "history": [
+      {
+        "date": "2025-01-14",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "ArgoCD",
+    "quadrant": "platform",
+    "link": "https://argo-cd.readthedocs.io/en/stable/",
+    "history": [
+      {
+        "date": "2025-05-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2025-08-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "AVD",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/virtual-desktop/overview",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "AVS",
+    "quadrant": "platform",
+    "link": "wiki.html?page=avs",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "AVS*",
+    "quadrant": "platform",
+    "link": "avs.html",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Azure API Management",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Azure App Gateway",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/application-gateway/overview",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Azure App. Insights",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview?tabs=net",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2025-01-14",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Azure B2C",
+    "quadrant": "platform",
+    "link": "wiki.html?page=azureb2c",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2025-01-14",
+        "ring": null
+      },
+      {
+        "date": "2026-01-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Azure B2C [end of life 2030]",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview",
+    "history": [
+      {
+        "date": "2025-01-14",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Azure Comm. Services",
+    "quadrant": "platform",
+    "link": "https://azure.microsoft.com/en-us/products/communication-services",
+    "history": [
+      {
+        "date": "2025-01-14",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "Azure Container Apps",
+    "quadrant": "platform",
+    "link": "https://azure.microsoft.com/products/container-apps",
+    "history": [
+      {
+        "date": "2025-01-14",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Azure Cosmos DB",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Azure DevOps",
+    "quadrant": "platform",
+    "link": "https://azure.microsoft.com/en-us/products/devops",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Azure Firewall",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/firewall/overview",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Azure Functions",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2025-08-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Azure Funtions",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Azure Key Vault",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/key-vault/general/basic-concepts",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Azure Kubernetes Services",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes",
+    "history": [
+      {
+        "date": "2025-01-14",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Azure Monitor",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Azure Service Bus",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-05-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Azure SQL",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview?view=azuresql",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Azure Web Apps",
+    "quadrant": "platform",
+    "link": "https://azure.microsoft.com/en-us/products/app-service/web",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-05-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "BizTalk",
+    "quadrant": "platform",
+    "link": "https://en.wikipedia.org/wiki/Microsoft_BizTalk_Server",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Citrix",
+    "quadrant": "platform",
+    "link": "https://en.wikipedia.org/wiki/Citrix_Systems",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "CoreDNS",
+    "quadrant": "platform",
+    "link": "https://coredns.io/",
+    "history": [
+      {
+        "date": "2026-02-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Darktrace",
+    "quadrant": "platform",
+    "link": "https://www.darktrace.com/",
+    "history": [
+      {
+        "date": "2025-10-08",
+        "ring": "probeer"
+      },
+      {
+        "date": "2026-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Dev Container",
+    "quadrant": "platform",
+    "link": "https://code.visualstudio.com/docs/devcontainers/containers",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "DFS",
+    "quadrant": "platform",
+    "link": "https://en.wikipedia.org/wiki/Distributed_File_System_(Microsoft)",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Entra External ID",
+    "quadrant": "platform",
+    "link": "https://www.microsoft.com/security/business/identity-access/microsoft-entra-external-id",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "Fully in control",
+    "quadrant": "platform",
+    "link": "https://fullyincontrol.com/",
+    "history": [
+      {
+        "date": "2025-10-08",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "GitHub Enterprise",
+    "quadrant": "platform",
+    "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-for-enterprises",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "Github Server",
+    "quadrant": "platform",
+    "link": "https://docs.github.com/en/enterprise-server@3.5/admin/overview/about-github-enterprise-server",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Grafana",
+    "quadrant": "platform",
+    "link": "https://grafana.com/",
+    "history": [
+      {
+        "date": "2025-10-08",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "HAVEN+",
+    "quadrant": "platform",
+    "link": "https://gitlab.com/commonground/haven/havenplus",
+    "history": [
+      {
+        "date": "2025-09-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "Infoblox",
+    "quadrant": "platform",
+    "link": "https://www.infoblox.com/",
+    "history": [
+      {
+        "date": "2026-02-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Istio",
+    "quadrant": "platform",
+    "link": "https://www.cncf.io/projects/istio/",
+    "history": [
+      {
+        "date": "2026-05-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "Keda",
+    "quadrant": "platform",
+    "link": "https://keda.sh/",
+    "history": [
+      {
+        "date": "2026-02-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "Keycloack",
+    "quadrant": "platform",
+    "link": "https://www.keycloak.org/",
+    "history": [
+      {
+        "date": "2025-08-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Keycloak",
+    "quadrant": "platform",
+    "link": "https://www.keycloak.org/",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "Kubernetes Services",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Leafcloud",
+    "quadrant": "platform",
+    "link": "https://leaf.cloud/",
+    "history": [
+      {
+        "date": "2025-10-08",
+        "ring": "probeer"
+      },
+      {
+        "date": "2026-05-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Let's Encrypt",
+    "quadrant": "platform",
+    "link": "https://letsencrypt.org/how-it-works/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Log Analytics Worksp.",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-workspace-overview",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Microsoft 365 Defender",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/microsoft-365/security/defender/microsoft-365-defender?view=o365-worldwide",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Microsoft Entra",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/entra/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Microsoft Identity Manager (MIM)",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/microsoft-identity-manager/",
+    "history": [
+      {
+        "date": "2025-10-08",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Microsoft Intune",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/mem/intune/fundamentals/what-is-intune",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Microsoft Sentinal",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/sentinel/overview",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Microsoft Sentinel",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/azure/sentinel/overview",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Micrsoft Entra External ID",
+    "quadrant": "platform",
+    "link": "https://www.microsoft.com/security/business/identity-access/microsoft-entra-external-id",
+    "history": [
+      {
+        "date": "2025-01-14",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "MIM",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/microsoft-identity-manager/",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "MOVEit",
+    "quadrant": "platform",
+    "link": "https://www.ipswitch.com/nl/moveit",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "MSMQ",
+    "quadrant": "platform",
+    "link": "https://learn.microsoft.com/en-us/previous-versions/windows/desktop/msmq/ms703216(v=vs.85)",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Oracle Cloud",
+    "quadrant": "platform",
+    "link": "https://www.oracle.com/cloud/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Oracle Database",
+    "quadrant": "platform",
+    "link": "https://www.oracle.com/database/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Podman",
+    "quadrant": "platform",
+    "link": "https://podman.io/",
+    "history": [
+      {
+        "date": "2025-10-08",
+        "ring": "probeer"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "PostgreSQL",
+    "quadrant": "platform",
+    "link": "https://en.wikipedia.org/wiki/PostgreSQL",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "RabbitMQ",
+    "quadrant": "platform",
+    "link": "https://www.rabbitmq.com/",
+    "history": [
+      {
+        "date": "2025-10-08",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "Redis",
+    "quadrant": "platform",
+    "link": "https://redis.io/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      },
+      {
+        "date": "2026-02-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "SonarCloud",
+    "quadrant": "platform",
+    "link": "https://docs.sonarcloud.io",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Talos",
+    "quadrant": "platform",
+    "link": "https://www.talos.dev/",
+    "history": [
+      {
+        "date": "2025-10-08",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "Trivy Security Scanner",
+    "quadrant": "platform",
+    "link": "https://trivy.dev/latest/",
+    "history": [
+      {
+        "date": "2025-05-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "UC4",
+    "quadrant": "platform",
+    "link": "https://www.broadcom.com/products/software/automation/automic-automation",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "WebDAV",
+    "quadrant": "platform",
+    "link": "https://en.wikipedia.org/wiki/WebDAV",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": ".NET 10",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/.NET",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": ".NET 6",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/.NET",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": ".NET 7",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/.NET",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": ".NET 8",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/.NET",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": ".NET 9",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/.NET",
+    "history": [
+      {
+        "date": "2025-03-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": ".NET Core",
+    "quadrant": "talen",
+    "link": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-1",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": ".NET Framework",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/.NET_Framework",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": ".NET Standard",
+    "quadrant": "talen",
+    "link": "https://learn.microsoft.com/en-us/dotnet/standard/net-standard?tabs=net-standard-1-0",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "ADFS",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Active_Directory_Federation_Services",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Ansible",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Ansible_(software)",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Antropic Claude",
+    "quadrant": "talen",
+    "link": "https://www.anthropic.com/learn/claude-for-work",
+    "history": [
+      {
+        "date": "2026-05-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "ARM templates",
+    "quadrant": "talen",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/templates/overview",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Bicep",
+    "quadrant": "talen",
+    "link": "https://learn.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview?tabs=bicep",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Blazor Server",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Blazor",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Blazor Webassembly",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Blazor",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Blazor WebAssembly",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Blazor",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "BPMN",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Business_Process_Model_and_Notation",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "C#",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "ChatGPT",
+    "quadrant": "talen",
+    "link": "https://typefully.com/svpino/11-ways-you-can-use-chatgpt-to-write-code-YnkOEF4",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "ChatGTP Enterprise",
+    "quadrant": "talen",
+    "link": "https://chatgpt.com/business/enterprise/",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "CNCF",
+    "quadrant": "talen",
+    "link": "https://www.cncf.io/",
+    "history": [
+      {
+        "date": "2025-10-08",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Coded UI",
+    "quadrant": "talen",
+    "link": "https://learn.microsoft.com/en-us/visualstudio/test/use-ui-automation-to-test-your-code?view=vs-2022",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Cypress",
+    "quadrant": "talen",
+    "link": "https://docs.cypress.io/guides/overview/why-cypress",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Dapr",
+    "quadrant": "talen",
+    "link": "https://dapr.io/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "Entity Framework Core",
+    "quadrant": "talen",
+    "link": "https://learn.microsoft.com/en-us/ef/core/",
+    "history": [
+      {
+        "date": "2025-04-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "GitHub Copilot",
+    "quadrant": "talen",
+    "link": "https://github.com/features/copilot",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "GrahpQL",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/GraphQL",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "GraphQL",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/GraphQL",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "Groovy",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Apache_Groovy",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "JavaScript",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/JavaScript",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "JetBrains ReSharper",
+    "quadrant": "talen",
+    "link": "https://www.jetbrains.com/resharper/",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "JetBrains Rider",
+    "quadrant": "talen",
+    "link": "https://www.jetbrains.com/rider/",
+    "history": [
+      {
+        "date": "2025-01-14",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Kofax KCM",
+    "quadrant": "talen",
+    "link": "https://docshield.kofax.com/KCM/nl_NL/5.4.0-cli2a1c07m/help/Designer/All_Shared/c_introall.html",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Low Code",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Low-code_development_platform",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "MassTransit",
+    "quadrant": "talen",
+    "link": "https://masstransit-project.com//understand/additions-to-transport.html",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Microsoft DSC",
+    "quadrant": "talen",
+    "link": "https://learn.microsoft.com/en-us/powershell/dsc/getting-started/wingettingstarted?view=dsc-1.1",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Microsot DSC",
+    "quadrant": "talen",
+    "link": "https://learn.microsoft.com/en-us/powershell/dsc/getting-started/wingettingstarted?view=dsc-1.1",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Miro",
+    "quadrant": "talen",
+    "link": "https://miro.com/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "MVC",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Node.js",
+    "quadrant": "talen",
+    "link": "https://nodejs.org/en",
+    "history": [
+      {
+        "date": "2025-05-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2025-08-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "NServiceBus",
+    "quadrant": "talen",
+    "link": "https://particular.net/nservicebus",
+    "history": [
+      {
+        "date": "2025-01-14",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "OpenID Connect",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/OpenID",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "OpenTelemetry",
+    "quadrant": "talen",
+    "link": "https://opentelemetry.io/",
+    "history": [
+      {
+        "date": "2025-01-14",
+        "ring": "probeer"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Oracle SQL Dev. Vscode",
+    "quadrant": "talen",
+    "link": "https://marketplace.visualstudio.com/items?itemName=Oracle.sql-developer",
+    "history": [
+      {
+        "date": "2025-03-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "PL/SQL",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/PL/SQL",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Playwright",
+    "quadrant": "talen",
+    "link": "https://github.com/microsoft/playwright",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "PowerShell 7",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/PowerShell",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Pulumi",
+    "quadrant": "talen",
+    "link": "https://www.pulumi.com",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Python",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Ready API",
+    "quadrant": "talen",
+    "link": "https://smartbear.com/product/ready-api/",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "SOAP",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/SOAP",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Specflow",
+    "quadrant": "talen",
+    "link": "https://specflow.org",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "SpecFlow",
+    "quadrant": "talen",
+    "link": "wiki.html?page=specflow",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Terraform",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/Terraform_(software)",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "TypeScript",
+    "quadrant": "talen",
+    "link": "https://en.wikipedia.org/wiki/TypeScript",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "verminder"
+      }
+    ]
+  },
+  {
+    "label": "Visual Studio (code)",
+    "quadrant": "talen",
+    "link": "https://visualstudio.microsoft.com/",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "WCF",
+    "quadrant": "talen",
+    "link": "https://learn.microsoft.com/en-us/dotnet/framework/wcf/whats-wcf",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "WeasyPrint",
+    "quadrant": "talen",
+    "link": "wiki.html?page=weasyprint",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "API",
+    "quadrant": "ontwerp",
+    "link": "https://nl.wikipedia.org/wiki/Application_programming_interface",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "API-first",
+    "quadrant": "ontwerp",
+    "link": "https://www.postman.com/api-first/",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Cloud Native",
+    "quadrant": "ontwerp",
+    "link": "https://github.com/cncf/toc/blob/main/DEFINITION.md",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Cloud Native & Agnostic",
+    "quadrant": "ontwerp",
+    "link": "https://github.com/cncf/toc/blob/main/DEFINITION.md",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "CNCF projects",
+    "quadrant": "ontwerp",
+    "link": "https://landscape.cncf.io",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Dependency Injection",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Dependency_injection",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Event Storming",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Event_storming",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Event-driven Architecture",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Event-driven_architecture",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Extreme Programming",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Extreme_programming",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Funovation",
+    "quadrant": "ontwerp",
+    "link": "/",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "HAVEN",
+    "quadrant": "ontwerp",
+    "link": "https://haven.commonground.nl/",
+    "history": [
+      {
+        "date": "2025-09-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "ITIL",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/ITIL",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Loose Coupling",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Loose_coupling",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Micro Frontends",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Microfrontend",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Microkernel Architecture",
+    "quadrant": "ontwerp",
+    "link": "https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/ch03.html",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "Microservices",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Microservices",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "Modular Monolith",
+    "quadrant": "ontwerp",
+    "link": "http://www.kamilgrzybek.com/design/modular-monolith-primer/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "Observability",
+    "quadrant": "ontwerp",
+    "link": "https://tinycode2.medium.com/do-you-know-your-unknown-unknowns-5ae5e01daa87",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "REST",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Representational_state_transfer",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Serverles Computing",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Serverless_computing",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Serverless Computing",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Serverless_computing",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Test-driven Development",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Test-driven_development",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Ubiquitous language",
+    "quadrant": "ontwerp",
+    "link": "https://deviq.com/domain-driven-design/ubiquitous-language",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Ubiquitous Language",
+    "quadrant": "ontwerp",
+    "link": "https://deviq.com/domain-driven-design/ubiquitous-language",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "Value Stream",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Value_stream",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Waardestroom",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Value_stream",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Waterfall Model",
+    "quadrant": "ontwerp",
+    "link": "https://en.wikipedia.org/wiki/Waterfall_model",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Afas",
+    "quadrant": "practices",
+    "link": "https://nl.wikipedia.org/wiki/AFAS_Software",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "AFAS",
+    "quadrant": "practices",
+    "link": "https://nl.wikipedia.org/wiki/AFAS_Software",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Agile Scrum",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Scrum_(software_development)",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Azure Chaos Studio",
+    "quadrant": "practices",
+    "link": "https://azure.microsoft.com/en-us/products/chaos-studio",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "onderzoek"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Chocolatey",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Chocolatey",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "CleanFest",
+    "quadrant": "practices",
+    "link": "wiki.html?page=cleanfest",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Cloud-Init",
+    "quadrant": "practices",
+    "link": "https://wiki.archlinux.org/title/Cloud-init",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Cognos",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Cognos",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Continuous Delivery",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Continuous_delivery",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Continuous Deployment",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Continuous_deployment",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "Continuous Integration",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Continuous_integration",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Contrast Security",
+    "quadrant": "practices",
+    "link": "https://docs.contrastsecurity.com/en/assess.html",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "DevOps",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/DevOps",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Discord",
+    "quadrant": "practices",
+    "link": "https://spyware.neocities.org/articles/discord.html",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Freshservice",
+    "quadrant": "practices",
+    "link": "https://www.freshworks.com/freshservice/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Fully in Control",
+    "quadrant": "practices",
+    "link": "https://fullyincontrol.nl",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2025-10-08",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Funovation Day",
+    "quadrant": "practices",
+    "link": "wiki.html?page=funovation",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "GitOps",
+    "quadrant": "practices",
+    "link": "https://about.gitlab.com/topics/gitops/",
+    "history": [
+      {
+        "date": "2025-05-01",
+        "ring": "probeer"
+      }
+    ]
+  },
+  {
+    "label": "Green Coding",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Green_computing",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "Green Computing",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Green_computing",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "onderzoek"
+      }
+    ]
+  },
+  {
+    "label": "Infrastructure as Code",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Infrastructure_as_code",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Microsoft 365",
+    "quadrant": "practices",
+    "link": "https://www.microsoft.com/nl-nl/microsoft-365/enterprise/e3",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Oracle SQL Developer",
+    "quadrant": "practices",
+    "link": "https://www.oracle.com/database/sqldeveloper/",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Packer",
+    "quadrant": "practices",
+    "link": "https://www.packer.io/",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Pentaho",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Pentaho",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Power Automate",
+    "quadrant": "practices",
+    "link": "https://learn.microsoft.com/en-us/power-automate/getting-started",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Power BI",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Microsoft_Power_BI",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "probeer"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Security-Chapter",
+    "quadrant": "practices",
+    "link": "wiki.html?page=securitychapter",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "SonarQube",
+    "quadrant": "practices",
+    "link": "https://docs.sonarqube.org/latest/",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2025-03-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Splunk",
+    "quadrant": "practices",
+    "link": "https://www.splunk.com/en_us/about-splunk.html",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "SSD",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Software_development_security",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "T-shaped Engineers",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/T-shaped_skills",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Tech-Chapter",
+    "quadrant": "practices",
+    "link": "wiki.html?page=techchapter",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Toad for Oracle",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Toad_(software)",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "verminder"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Visual Studio",
+    "quadrant": "practices",
+    "link": "https://visualstudio.microsoft.com/",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Visual Studio Code",
+    "quadrant": "practices",
+    "link": "https://code.visualstudio.com/",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-01-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Visual Studio Code/2022",
+    "quadrant": "practices",
+    "link": "https://visualstudio.microsoft.com/#vs-section",
+    "history": [
+      {
+        "date": "2023-07-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2024-02-01",
+        "ring": null
+      }
+    ]
+  },
+  {
+    "label": "Waardestromen",
+    "quadrant": "practices",
+    "link": "https://en.wikipedia.org/wiki/Value_stream",
+    "history": [
+      {
+        "date": "2026-01-01",
+        "ring": "gebruik"
+      }
+    ]
+  }
+]
