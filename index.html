@@ -88,6 +88,8 @@ Kleuren:
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="radar.js"></script>
   <script src="timeline.js"></script>
+  <script src="timeline-scale.js"></script>
+  <script src="slider.js"></script>
 
 </head>
 
@@ -100,6 +102,8 @@ Kleuren:
     <h1>Tech Radar</h1>
   </div>
 
+  <div id="timeline-container"></div>
+
   <svg id="radar" style="display: block; margin: auto"></svg>
 
   <script>
@@ -107,16 +111,46 @@ Kleuren:
     // Peildatum uit ?date= of ?version= (alias); anders vandaag.
     const searchParams = new URLSearchParams(window.location.search);
     const today = new Date().toISOString().slice(0, 10);
-    const peildatum =
+    const initialPeildatum =
       searchParams.get('date') || searchParams.get('version') || today;
 
     fetch("/data/radar.json")
       .then(response => response.json())
       .then(data => {
-        const moment = resolveMoment(data, peildatum);
-        radar_visualization({
-          title: moment ? formatMomentLabel(moment) : "",
-          entries: projectRadar(data, peildatum),
+        // Render alleen opnieuw wanneer de peildatum in een ander
+        // wijzigingsmoment valt; tussen twee momenten is de radar identiek.
+        let currentMoment;
+        function render(peildatum) {
+          const moment = resolveMoment(data, peildatum);
+          if (moment === currentMoment) return;
+          currentMoment = moment;
+          radar_visualization({
+            title: moment ? formatMomentLabel(moment) : "",
+            entries: projectRadar(data, peildatum),
+          });
+        }
+
+        render(initialPeildatum);
+
+        // Bereik: vroegste wijzigingsmoment .. nu. Standaardvenster (laatste
+        // 3 jaar) en zoom/pan worden in de slider afgehandeld.
+        const now = new Date();
+        const moments = momentDates(data); // oplopend gesorteerd
+        const minDate = new Date(moments[0]);
+        createSlider({
+          container: "#timeline-container",
+          minDate: minDate,
+          maxDate: now,
+          initialDate: initialPeildatum,
+          moments: deriveChangelog(data),
+          onChange: render,
+          onSettle: peildatum => {
+            // Deelbare peildatum in de URL, zonder paginaherlaad.
+            const url = new URL(window.location);
+            url.searchParams.set('date', peildatum);
+            url.searchParams.delete('version');
+            history.replaceState(null, '', url);
+          },
         });
       });
   </script>
