@@ -39,3 +39,122 @@ a {
   width: 640px;
   padding: 0 20px 0 20px;
 }
+
+/* Tijdlijn-slider */
+#timeline-container {
+  display: flex;
+  justify-content: center;
+  margin: 4px auto 4px;
+  padding: 0 20px;
+}
+#timeline {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  overflow: visible;
+  touch-action: none; /* pinch/pan zelf afhandelen, niet de pagina scrollen */
+}
+.timeline-bg {
+  fill: transparent;
+  cursor: grab;
+}
+.timeline-bg:active {
+  cursor: grabbing;
+}
+.timeline-track {
+  stroke: var(--kleur-tekst);
+  stroke-opacity: 0.32;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+.timeline-tick {
+  stroke: var(--kleur-tekst);
+  stroke-opacity: 0.16;
+  stroke-width: 1;
+}
+.timeline-tick-major {
+  stroke-opacity: 0.3;
+}
+.timeline-year {
+  fill: var(--kleur-tekst);
+  font-family: 'Raleway';
+  font-size: 11px;
+  opacity: 0.6;
+  user-select: none;
+}
+.timeline-month {
+  fill: var(--kleur-tekst);
+  font-family: 'Raleway';
+  font-size: 10px;
+  opacity: 0.4;
+  user-select: none;
+}
+.timeline-now {
+  stroke: var(--kleur-gebruik);
+  stroke-opacity: 0.9;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+.timeline-now-label {
+  fill: var(--kleur-gebruik);
+  font-family: 'Raleway';
+  font-size: 12px;
+  font-weight: bold;
+  opacity: 0.95;
+  user-select: none;
+}
+.timeline-marker {
+  fill: var(--kleur-tekst);
+  fill-opacity: 0.5;
+  cursor: pointer;
+  transition: fill-opacity 0.15s ease, r 0.15s ease;
+}
+.timeline-marker:hover {
+  fill-opacity: 0.95;
+}
+.timeline-marker-active {
+  fill: var(--kleur-onderzoek);
+  fill-opacity: 1;
+}
+.timeline-thumb {
+  fill: var(--kleur-onderzoek);
+  stroke: white;
+  stroke-width: 2.5;
+  cursor: grab;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.45));
+  transition: opacity 0.15s ease;
+}
+.timeline-thumb:active {
+  cursor: grabbing;
+}
+.timeline-thumb-off {
+  opacity: 0.3;
+}
+.timeline-hint {
+  fill: var(--kleur-tekst);
+  font-family: 'Raleway';
+  font-size: 9px;
+  opacity: 0.3;
+  user-select: none;
+}
+.timeline-tooltip {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.35));
+}
+.timeline-tooltip rect {
+  fill: var(--kleur-tekst);
+}
+.timeline-tooltip .timeline-tip-tail {
+  fill: var(--kleur-tekst);
+}
+.timeline-tip-title {
+  fill: var(--kleur-achtergrond);
+  font-family: 'Raleway';
+  font-size: 11px;
+  font-weight: bold;
+}
+.timeline-tip-sub {
+  fill: var(--kleur-achtergrond);
+  font-family: 'Raleway';
+  font-size: 10px;
+  opacity: 0.75;
+}

@@ -13,13 +13,15 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 
-Uitleg
-"quadrant": 0,    - 0,1,2,3 (tegen de klok in, begint rechtsonder)
-"ring": 0,        - 0,1,2,3 (start vanuit de binnenste ring)
-"label": "",      - labelnaam
-"link": "",       - link naar documentatie
-"active": true,   - zichtbaar ja of nee
-"status": ""      - onverander:0, nieuw:1, verplaats=2
+Uitleg — data staat in data/radar.json, één entry per technologie:
+"label":    - naam én unieke identiteit
+"quadrant": - slug: platform | talen | ontwerp | practices
+"link":     - link naar documentatie
+"history":  - [{ "date": "JJJJ-MM-DD", "ring": <slug|null> }]
+              ring-slug: gebruik | probeer | onderzoek | verminder
+              ring null = vanaf die datum verwijderd
+De status (nieuw/verplaatst) en de changelog worden afgeleid uit history;
+niet meer handmatig zetten. Zie CONTEXT.md en docs/adr/.
 
 Kleuren: 
   Roze    : #BB4EAC
@@ -85,6 +87,9 @@ Kleuren:
 
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="radar.js"></script>
+  <script src="timeline.js"></script>
+  <script src="timeline-scale.js"></script>
+  <script src="slider.js"></script>
 
 </head>
 
@@ -97,34 +102,56 @@ Kleuren:
     <h1>Tech Radar</h1>
   </div>
 
+  <div id="timeline-container"></div>
+
   <svg id="radar" style="display: block; margin: auto"></svg>
 
   <script>
 
-    fetch("/versions/versions.json")
+    // Peildatum uit ?date= of ?version= (alias); anders vandaag.
+    const searchParams = new URLSearchParams(window.location.search);
+    const today = new Date().toISOString().slice(0, 10);
+    const initialPeildatum =
+      searchParams.get('date') || searchParams.get('version') || today;
+
+    fetch("/data/radar.json")
       .then(response => response.json())
       .then(data => {
-        data.sort((a, b) => a.version < b.version ? 1 : -1);
-
-        // haal versie uit evt. query params of anders de meest recente versie
-        const searchParams = new URLSearchParams(window.location.search);
-        let versionString = searchParams.get('version');
-        if (!data.some(d => d.version === versionString)) {
-          versionString = data[0].version;
+        // Render alleen opnieuw wanneer de peildatum in een ander
+        // wijzigingsmoment valt; tussen twee momenten is de radar identiek.
+        let currentMoment;
+        function render(peildatum) {
+          const moment = resolveMoment(data, peildatum);
+          if (moment === currentMoment) return;
+          currentMoment = moment;
+          radar_visualization({
+            title: moment ? formatMomentLabel(moment) : "",
+            entries: projectRadar(data, peildatum),
+          });
         }
 
-        const versionData = data.find(d => d.version === versionString);
+        render(initialPeildatum);
 
-        const config = {
-          title: versionData.title
-        };
-
-        fetch(`/versions/${versionString}.json`)
-          .then(response => response.json())
-          .then(entries => {
-            config.entries = entries;
-            radar_visualization(config);
-          });
+        // Bereik: vroegste wijzigingsmoment .. nu. Standaardvenster (laatste
+        // 3 jaar) en zoom/pan worden in de slider afgehandeld.
+        const now = new Date();
+        const moments = momentDates(data); // oplopend gesorteerd
+        const minDate = new Date(moments[0]);
+        createSlider({
+          container: "#timeline-container",
+          minDate: minDate,
+          maxDate: now,
+          initialDate: initialPeildatum,
+          moments: deriveChangelog(data),
+          onChange: render,
+          onSettle: peildatum => {
+            // Deelbare peildatum in de URL, zonder paginaherlaad.
+            const url = new URL(window.location);
+            url.searchParams.set('date', peildatum);
+            url.searchParams.delete('version');
+            history.replaceState(null, '', url);
+          },
+        });
       });
   </script>
 
@@ -162,7 +189,8 @@ Kleuren:
       <h3>Wie bepaalt dit?</h3>
       <p>
         De inhoud van de Wigo4it Tech Radar wordt maandelijks vastgesteld in ons<br>
-        <a href="wiki.html?page=techchapter" target="_blank" rel="noopener noreferrer">Tech Chapter</a>. Staat er iets verkeerd of mis je iets, dan bespreken we dat en nemen we het mee in de volgende update.
+        <a href="wiki.html?page=techchapter" target="_blank" rel="noopener noreferrer">Tech Chapter</a>. Staat er iets
+        verkeerd of mis je iets, dan bespreken we dat en nemen we het mee in de volgende update.
       </p>
       <p>
         Vorige versies zijn te vinden in de <a href="changelog.html">Changelog</a>.
