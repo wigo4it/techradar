@@ -67,6 +67,10 @@
       {
         "date": "2025-08-01",
         "ring": "probeer"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "gebruik"
       }
     ]
   },
@@ -201,6 +205,10 @@
       {
         "date": "2025-01-14",
         "ring": "gebruik"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "verminder"
       }
     ]
   },
@@ -220,13 +228,39 @@
     ]
   },
   {
-    "label": "Azure DevOps",
+    "label": "Azure Boards",
     "quadrant": "platform",
-    "link": "https://azure.microsoft.com/en-us/products/devops",
+    "link": "https://azure.microsoft.com/en-us/products/devops/boards",
     "history": [
       {
         "date": "2024-02-01",
         "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Azure Pipelines",
+    "quadrant": "platform",
+    "link": "https://azure.microsoft.com/en-us/products/devops/pipelines",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      }
+    ]
+  },
+  {
+    "label": "Azure Repos",
+    "quadrant": "platform",
+    "link": "https://azure.microsoft.com/en-us/products/devops/repos",
+    "history": [
+      {
+        "date": "2024-02-01",
+        "ring": "gebruik"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "verminder"
       }
     ]
   },
@@ -469,6 +503,10 @@
       {
         "date": "2025-03-01",
         "ring": "probeer"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "gebruik"
       }
     ]
   },
@@ -539,6 +577,10 @@
       {
         "date": "2026-02-01",
         "ring": "probeer"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "gebruik"
       }
     ]
   },
@@ -565,6 +607,10 @@
       {
         "date": "2026-01-01",
         "ring": "probeer"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "gebruik"
       }
     ]
   },
@@ -802,6 +848,10 @@
       {
         "date": "2025-10-08",
         "ring": "probeer"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "gebruik"
       }
     ]
   },
@@ -821,6 +871,10 @@
       {
         "date": "2026-02-01",
         "ring": "probeer"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "gebruik"
       }
     ]
   },
@@ -832,6 +886,10 @@
       {
         "date": "2023-07-01",
         "ring": "gebruik"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "verminder"
       }
     ]
   },
@@ -854,6 +912,10 @@
       {
         "date": "2025-05-01",
         "ring": "probeer"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "gebruik"
       }
     ]
   },
@@ -1211,6 +1273,10 @@
       {
         "date": "2025-04-01",
         "ring": "onderzoek"
+      },
+      {
+        "date": "2026-11-01",
+        "ring": "gebruik"
       }
     ]
   },
